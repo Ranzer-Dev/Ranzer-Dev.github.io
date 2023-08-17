@@ -1,0 +1,71 @@
+* {
+    box-sizing: content-box;
+}
+
+#caixaPaiPrincipal {
+    text-align: center;
+}
+
+.informacaoPersonagem {
+    display: flex;
+}
+
+.nomePersonagem {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.inicioBandeira {
+    width: 40%;
+}
+
+.finalBandeira {
+    width: 10%;
+}
+
+.efeitoBandeira-nomePersonagem-cima{
+    border-bottom-style: double;
+    margin-top: 1.3em;
+    height: 1em;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.efeitoBandeira-nomePersonagem-baixo{
+    border-bottom-style: double;
+    height: 1em;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.especificacoesPersonagem {
+    text-align: center;
+    padding: 1.2em 0 0.8em 0;
+    border-style: double;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    display: flex;
+    width: 50%;
+    font-size: 14px;
+}
+
+.especificacoesPersonagem div {
+    width: 33%;
+}
+
+.especificacoesPersonagem p{
+    margin: 1em 0px 0.3em 0px;
+}
+
+.especificacoesPersonagem .subtituloCampoTexto{
+    font-weight: bold;
+    width: 100%;
+    margin: 0px;
+    display: block;
+    border-top: 1px solid black;
+}
+
+.controleDeTamanhoBandeira{
+    height: 30%;
+}
