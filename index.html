@@ -29,7 +29,7 @@
             <div class="especificacoesPersonagem">
                 <div>
                     <p>Desenvolvedor - Junior</p>
-                    <p class="subtituloCampoTexto">Classe e Nível</p>
+                    <p class="subtituloCampoTexto">Classe/Nível</p>
                 </div>
                 <div>
                     <p>Aprendiz de Códigos</p>
@@ -37,7 +37,7 @@
                 </div>
                 <div>
                     <p>Rodolfo Antunes</p>
-                    <p class="subtituloCampoTexto">Nome do Jogador</p>
+                    <p class="subtituloCampoTexto">Jogador</p>
                 </div>
                 <div>
                     <p>Humano "nooooo"</p>
@@ -49,7 +49,7 @@
                 </div>
                 <div>
                     <p>100 e subindo</p>
-                    <p class="subtituloCampoTexto">Pontos de Experiência</p>
+                    <p class="subtituloCampoTexto">Experiência</p>
                 </div>
             </div>
             <div class="finalBandeira">
@@ -61,20 +61,68 @@
             </div>
         </section>
         <section class="statusEAtributrosPersonagem">
-            <div class="atriubutos">
+            <div class="caixaAtriubutos">
                 <div class="caixaForca">Força
-                    <div class="quantidadeForca">15</div>
+                    <div class="pontosForca">15</div>
                 </div>
-                <div class="caixaDestreza">Destreza<div class="quantidadeDestreza">15</div></div>
-                <div class="caixaConstituicao">Constituição<div class="quantidadeConstituicao">15</div></div>
-                <div class="caixaInteligencia">Inteligência<div class="quantidadeInteligencia">15</div></div>
-                <div class="caixaSabedoria">Sabedoria<div class="quantidadeSabedoria">15</div></div>
-                <div class="caixaCarisma">Carisma<div class="quantidadeCarisma">15</div></div>
+                <div class="caixaDestreza">Destreza
+                    <div class="pontosDestreza">15</div>
+                </div>
+                <div class="caixaConstituicao">Constituição
+                    <div class="pontosConstituicao">15</div>
+                </div>
+                <div class="caixaInteligencia">Inteligência
+                    <div class="pontosInteligencia">15</div>
+                </div>
+                <div class="caixaSabedoria">Sabedoria
+                    <div class="pontosSabedoria">15</div>
+                </div>
+                <div class="caixaCarisma">Carisma
+                    <div class="pontosCarisma">15</div>
+                </div>
             </div>
             <div class="atributosAdicionais">
-                <div class="inspiracao"></div>
-                <div class="bonusDeProficiencia"></div>
-                <div class="testeDeResistencia"></div>
+                <div class="caixaInspiracao">
+                    <div class="pontosInspiracao">0</div>
+                    <div class="inspiracao">Inspiração</div>
+                </div>
+                <div class="caixaBonusProficiencia">
+                    <div class="pontosBonusProficiencia">0</div>
+                    <div class="bonusProficiencia">Proficiência</div>
+                    <div class="completaBordaBonusProficiencia"></div>
+                </div>
+                <div class="caixaTesteDeResistencias">
+                    <div class="caixaResistenciaForca">
+                        <input type="checkbox" name="forca" id="forca" />
+                        <input type="number" readonly class="pontosResistenciaForca" />
+                        <label for="forca">Força</label>
+                    </div>
+                    <div class="caixaResistenciaDestreza">
+                        <input type="checkbox" name="destreza" id="destreza" />
+                        <input type="number" readonly class="pontosResistenciaDestreza" />
+                        <label for="destreza">Destreza</label>
+                    </div>
+                    <div class="caixaResistenciaConstituicao">
+                        <input type="checkbox" name="constituicao" id="constituicao" />
+                        <input type="number" readonly class="pontosResistenciaConstituicao" />
+                        <label for="constituicao">Constituiçaõ</label>
+                    </div>
+                    <div class="caixaResistenciaInteligencia">
+                        <input type="checkbox" name="inteligencia" id="inteligencia" />
+                        <input type="number" readonly class="pontosResistenciaInteligencia" />
+                        <label for="inteligencia">Inteligiência</label>
+                    </div>
+                    <div class="caixaResistenciaSabedoria">
+                        <input type="checkbox" name="sabedoria" id="sabedoria" />
+                        <input type="number" readonly class="pontosResistenciaSabedoria" />
+                        <label for="sabedoria">Sabedoria</label>
+                    </div>
+                    <div class="caixaResistenciaCarisma">
+                        <input type="checkbox" name="carisma" id="carisma" />
+                        <input type="number" readonly class="pontosResistenciaCarisma" />
+                        <label for="carisma">Carisma</label>
+                    </div>
+                </div>
                 <div class="pericias"></div>
             </div>
         </section>
