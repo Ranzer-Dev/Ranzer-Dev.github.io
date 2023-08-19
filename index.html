@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <link rel="stylesheet" href="/css/style.css">
     <title>Portifólio</title>
 </head>
@@ -69,7 +69,7 @@
                     <div class="pontosDestreza">15</div>
                 </div>
                 <div class="caixaConstituicao identificadorCaixa">Constituição
-                    <div class="pontosConstituicao identificadorCaixa">15</div>
+                    <div class="pontosConstituicao">15</div>
                 </div>
                 <div class="caixaInteligencia identificadorCaixa">Inteligência
                     <div class="pontosInteligencia">15</div>
@@ -110,7 +110,7 @@
 
                     <div class="caixaResistenciaConstituicao">
                         <input type="checkbox" name="constituicao" id="constituicao" />
-                        <input type="number" readonly class="pontosResistenciaConstituicao" />
+                        <input type="number" readonly class="pontosResistenciaConstituicao"/>
                         <label for="constituicao">Constituição</label>
                     </div>
 
@@ -257,6 +257,7 @@
             </div>
 
             <div class="caixaStatusDeCombate">
+                <div class="caixaDefesas">
                     <div class="caixaArmadura identificadorCaixa">
                         <div class="pontosArmadura">0</div>
                         Classe Armd
@@ -269,6 +270,8 @@
                         <div class="pontosDesloc">0</div>
                         Desloc.
                     </div>
+                </div>
+                <div class="caixaSaude">
                     <div class="caixaPontosDeVidaAtuais">
                         <label for="pvTotais" class="pvTotaisLabel">PVTotais</label>
                         <input name="pvTotais" id="pvTotais" type="text"/>
@@ -278,6 +281,8 @@
                         <div class="pontosDeVidaTemporarios">0</div>
                         Pontos de vida temporários
                     </div>
+                </div>
+                <div class="caixaSorte">
                     <div class="caixaDadosDeVida">
                         <div class="caixaInput">
                         <label for="totalDadosDeVida">Total</label>
@@ -300,6 +305,7 @@
                         </div>
                         <p class="identificadorCaixa">Teste contra a morte</p>
                     </div>
+                </div>
             </div>
 
         </section>
