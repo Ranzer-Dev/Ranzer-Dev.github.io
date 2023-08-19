@@ -61,70 +61,211 @@
             </div>
         </section>
         <section class="statusEAtributrosPersonagem">
-            <div class="caixaAtriubutos">
-                <div class="caixaForca">Força
+            <div class="caixaAtributos">
+                <div class="caixaForca identificadorCaixa">Força
                     <div class="pontosForca">15</div>
                 </div>
-                <div class="caixaDestreza">Destreza
+                <div class="caixaDestreza identificadorCaixa">Destreza
                     <div class="pontosDestreza">15</div>
                 </div>
-                <div class="caixaConstituicao">Constituição
-                    <div class="pontosConstituicao">15</div>
+                <div class="caixaConstituicao identificadorCaixa">Constituição
+                    <div class="pontosConstituicao identificadorCaixa">15</div>
                 </div>
-                <div class="caixaInteligencia">Inteligência
+                <div class="caixaInteligencia identificadorCaixa">Inteligência
                     <div class="pontosInteligencia">15</div>
                 </div>
-                <div class="caixaSabedoria">Sabedoria
+                <div class="caixaSabedoria identificadorCaixa">Sabedoria
                     <div class="pontosSabedoria">15</div>
                 </div>
-                <div class="caixaCarisma">Carisma
+                <div class="caixaCarisma identificadorCaixa">Carisma
                     <div class="pontosCarisma">15</div>
                 </div>
             </div>
             <div class="atributosAdicionais">
-                <div class="caixaInspiracao">
+
+                <div class="caixaInspiracao identificadorCaixa">
                     <div class="pontosInspiracao">0</div>
                     <div class="inspiracao">Inspiração</div>
                 </div>
-                <div class="caixaBonusProficiencia">
+
+                <div class="caixaBonusProficiencia identificadorCaixa">
                     <div class="pontosBonusProficiencia">0</div>
                     <div class="bonusProficiencia">Proficiência</div>
                     <div class="completaBordaBonusProficiencia"></div>
                 </div>
+
                 <div class="caixaTesteDeResistencias">
+
                     <div class="caixaResistenciaForca">
                         <input type="checkbox" name="forca" id="forca" />
                         <input type="number" readonly class="pontosResistenciaForca" />
                         <label for="forca">Força</label>
                     </div>
+
                     <div class="caixaResistenciaDestreza">
                         <input type="checkbox" name="destreza" id="destreza" />
                         <input type="number" readonly class="pontosResistenciaDestreza" />
                         <label for="destreza">Destreza</label>
                     </div>
+
                     <div class="caixaResistenciaConstituicao">
                         <input type="checkbox" name="constituicao" id="constituicao" />
                         <input type="number" readonly class="pontosResistenciaConstituicao" />
-                        <label for="constituicao">Constituiçaõ</label>
+                        <label for="constituicao">Constituição</label>
                     </div>
+
                     <div class="caixaResistenciaInteligencia">
                         <input type="checkbox" name="inteligencia" id="inteligencia" />
                         <input type="number" readonly class="pontosResistenciaInteligencia" />
                         <label for="inteligencia">Inteligiência</label>
                     </div>
+
                     <div class="caixaResistenciaSabedoria">
                         <input type="checkbox" name="sabedoria" id="sabedoria" />
                         <input type="number" readonly class="pontosResistenciaSabedoria" />
                         <label for="sabedoria">Sabedoria</label>
                     </div>
+
                     <div class="caixaResistenciaCarisma">
                         <input type="checkbox" name="carisma" id="carisma" />
                         <input type="number" readonly class="pontosResistenciaCarisma" />
                         <label for="carisma">Carisma</label>
                     </div>
+
+                    <p class="identificadorCaixa">Teste de Resistência</p>
                 </div>
-                <div class="pericias"></div>
+
+                <div class="caixaPericias">
+
+                    <div class="caixaPericiaAcrobacia">
+                        <input type="checkbox" name="acrobacia" id="acrobacia">
+                        <input type="number" readonly="readonly" class="pontosPericiaAcrobacia">
+                        <label for="acrobacia">Acrobracia (Des)</label>
+                    </div>
+
+                    <div class="caixaPericiaArcanismo">
+                        <input type="checkbox" name="arcanismo" id="arcanismo">
+                        <input type="number" readonly="readonly" class="pontosPericiaArcanismo">
+                        <label for="arcanismo">Arcanismo (Int)</label>
+                    </div>
+
+                    <div class="caixaPericiaAtletismo">
+                        <input type="checkbox" name="atletismo" id="atletismo">
+                        <input type="number" readonly="readonly" class="pontosPericiaAtletismo">
+                        <label for="atletismo">Atletismo (For)</label>
+                    </div>
+
+                    <div class="caixaPericiaAtuacao">
+                        <input type="checkbox" name="atuacao" id="atuacao">
+                        <input type="number" readonly="readonly" class="pontosPericiaAtuacao">
+                        <label for="atuacao">Atuação (Car)</label>
+                    </div>
+
+                    <div class="caixaPericiaBlefar">
+                        <input type="checkbox" name="blefar" id="blefar">
+                        <input type="number" readonly="readonly" class="pontosPericiaBlefar">
+                        <label for="">Blefar (Car)</label>
+                    </div>
+
+                    <div class="caixaPericiaFurtividade">
+                        <input type="checkbox" name="furtividade" id="furtividade">
+                        <input type="number" readonly="readonly" class="pontosPericiaFurtividade">
+                        <label for="furtividade">Furtividade (Car)</label>
+                    </div>
+
+                    <div class="caixaPericiaHistoria">
+                        <input type="checkbox" name="história" id="história">
+                        <input type="number" readonly="readonly" class="pontosPericiaHistoria">
+                        <label for="história">História (Int)</label>
+                    </div>
+
+                    <div class="caixaPericiaIntimidacao">
+                        <input type="checkbox" name="intimidação" id="intimidação">
+                        <input type="number" readonly="readonly" class="pontosPericiaIntimidacao">
+                        <label for="intimidação">Intimidação (Car)</label>
+                    </div>
+
+                    <div class="caixaPericiaIntuicao">
+                        <input type="checkbox" name="intuição" id="intuição">
+                        <input type="number" readonly="readonly" class="pontosPericiaIntuicao">
+                        <label for="intuição">Intuição (Sab)</label>
+                    </div>
+
+                    <div class="caixaPericiaInvestigacao">
+                        <input type="checkbox" name="investigação" id="investigação">
+                        <input type="number" readonly="readonly" class="pontosPericiaInvestigacao">
+                        <label for="investigação">Investigação (Int)</label>
+                    </div>
+
+                    <div class="caixaPericiaLidarComAnimais">
+                        <input type="checkbox" name="lidarComAnimais" id="lidarComAnimais">
+                        <input type="number" readonly="readonly" class="pontosPericiaLidarComAnimais">
+                        <label for="lidar-com-animais">Adestrador (Sab)</label>
+                    </div>
+
+                    <div class="caixaPericiaMedicina">
+                        <input type="checkbox" name="medicina" id="medicina">
+                        <input type="number" readonly="readonly" class="pontosPericiaMedicina">
+                        <label for="medicina">Medicina (Sab)</label>
+                    </div>
+
+                    <div class="caixaPericiaNatureza">
+                        <input type="checkbox" name="natureza" id="natureza">
+                        <input type="number" readonly="readonly" class="pontosPericiaNatureza">
+                        <label for="natureza">Natureza (Int)</label>
+                    </div>
+
+                    <div class="caixaPericiaPercepcao">
+                        <input type="checkbox" name="percepção" id="percepção">
+                        <input type="number" readonly="readonly" class="pontosPericiaPercepcao">
+                        <label for="percepção">Percepção (Sab)</label>
+                    </div>
+
+                    <div class="caixaPericiaPersuasao">
+                        <input type="checkbox" name="persuasão" id="persuasão">
+                        <input type="number" readonly="readonly" class="pontosPericiaPersuasao">
+                        <label for="persuasão">Persuasão (Car)</label>
+                    </div>
+
+                    <div class="caixaPericiaPrestidigitacao">
+                        <input type="checkbox" name="prestidigitação" id="prestidigitação">
+                        <input type="number" readonly="readonly" class="pontosPericiaPrestidigitacao">
+                        <label for="prestidigitação">Ilusionismo (Des)</label>
+                    </div>
+
+                    <div class="caixaPericiaReligiao">
+                        <input type="checkbox" name="religião" id="religião">
+                        <input type="number" readonly="readonly" class="pontosPericiaReligiao">
+                        <label for="religião">Religião (Int)</label>
+                    </div>
+
+                    <div class="caixaPericiaSobrevivencia">
+                        <input type="checkbox" name="sobrevivência" id="sobrevivência">
+                        <input type="number" readonly="readonly" class="pontosPericiaSobrevivencia">
+                        <label for="sobrevivência">Sobrevivência (Sab)</label>
+                    </div>
+
+                    <p class="identificadorCaixa">Perícias</p>
+                </div>
             </div>
+            
+            <div class="caixaCaracteristicasEHabilidades">
+                <img class="iconeHabilidade" src="imgs/iconeHtml2.png" alt="">
+                <img class="iconeHabilidade" src="imgs/iconeCss1.png" alt="">
+                <img class="iconeHabilidade" src="imgs/iconeJavaScript3.png" alt="">
+                <p class="identificadorCaixa">Características e habilidades</p>
+            </div>
+
+            <div class="caixaStatusDeCombate">
+                    <div class="caixaArmadura identificadorCaixa">Classe Armd</div>
+                    <div class="caixaIniciativa identificadorCaixa">Iniciativa</div>
+                    <div class="caixaDesloc identificadorCaixa">Desloc.</div>
+                    <div class="caixaPontosDeVidaAtuais"><p class="identificadorCaixa">Pontos de vida atuais</p></div>
+                    <div class="caixaPontosDeVidaTemporários"><p class="identificadorCaixa">Pontos de vida temporários</p></div>
+                    <div class="caixaDadosDeVida"><p class="identificadorCaixa">Dados de vida</p></div>
+                    <div class="caixaTesteContraMorte"><p class="identificadorCaixa">Teste contra a morte</p></div>
+            </div>
+
         </section>
     </main>
 </body>

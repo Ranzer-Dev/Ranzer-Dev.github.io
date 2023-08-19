@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-size: 12px;
 }
 
 body {
@@ -52,7 +53,6 @@ body {
     flex-flow: row wrap;
     display: flex;
     width: 50%;
-    font-size: 14px;
 }
 
 .especificacoesPersonagem div {
@@ -80,23 +80,29 @@ body {
 }
 
 .caixaAtributos {
-    width: 10%;
+    width: 13%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
 }
 
 .caixaForca, .caixaDestreza, .caixaConstituicao, .caixaInteligencia, .caixaSabedoria, .caixaCarisma{
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
-    width: 60%;
+    width: 100%;
+    width: 71px;
+    height: 10%;
     border: 3px double black;
-    margin: 1em 2em;
     padding: 0.5em 0.5em 0 0.5em;
+    margin: 1em 0;
 }
 
 .pontosForca, .pontosDestreza, .pontosConstituicao, .pontosInteligencia, .pontosSabedoria, .pontosCarisma {
     background-color: #fff;
     position: relative;
-    top: 0.8em;
+    top: 3.7em;
     border: 3px double black;
     border-radius: 100%;
     width: 60%;
@@ -105,12 +111,14 @@ body {
 
 .atributosAdicionais{
     width: 20%;
+    min-width: 160px;
 }
 
 .caixaInspiracao {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    min-width: 160px;
     width: 100%;
 }
 
@@ -135,6 +143,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    min-width: 160px;
     position: relative;
 }
 
@@ -170,16 +179,72 @@ body {
     align-items: flex-start;
     border: 3px double black;
     flex-flow: column nowrap;
+    min-width: 160px;
+    white-space: nowrap;
 }
 
-.caixaResistenciaForca, .caixaResistenciaDestreza, .caixaResistenciaConstituicao, .caixaResistenciaInteligencia, .caixaResistenciaSabedoria, .caixaResistenciaCarisma {
+.caixaPericias {
+    display: flex;
+    align-items: flex-start;
+    border: 3px double black;
+    flex-flow: column nowrap;
+    min-width: 160px;
+    white-space: nowrap;
+}
+
+.identificadorCaixa {
+    font-weight: bold;
+    align-self: center;
+}
+
+.caixaResistenciaForca, .caixaResistenciaDestreza, .caixaResistenciaConstituicao, .caixaResistenciaInteligencia, .caixaResistenciaSabedoria, .caixaResistenciaCarisma,.caixaPericiaArcanismo,.caixaPericiaAcrobacia,.caixaPericiaAtletismo,.caixaPericiaAtuacao,.caixaPericiaBlefar,.caixaPericiaFurtividade,.caixaPericiaHistoria,.caixaPericiaIntimidacao,.caixaPericiaIntuicao,.caixaPericiaInvestigacao,.caixaPericiaLidarComAnimais,.caixaPericiaMedicina,.caixaPericiaNatureza,.caixaPericiaPercepcao,.caixaPericiaPersuasao,.caixaPericiaPrestidigitacao,.caixaPericiaReligiao,.caixaPericiaSobrevivencia {
     text-align: left;
-    padding: 0.4em 1em;
+    margin: 0.3em 0.5em;
 }
 
-.pontosResistenciaForca, .pontosResistenciaDestreza, .pontosResistenciaConstituicao, .pontosResistenciaInteligencia, .pontosResistenciaSabedoria, .pontosResistenciaCarisma {
+.pontosResistenciaForca, .pontosResistenciaDestreza, .pontosResistenciaConstituicao, .pontosResistenciaInteligencia, .pontosResistenciaSabedoria, .pontosResistenciaCarisma,.pontosPericiaAcrobacia,.pontosPericiaArcanismo,.pontosPericiaAtletismo,.pontosPericiaAtuacao,.pontosPericiaBlefar,.pontosPericiaFurtividade,.pontosPericiaHistoria,.pontosPericiaIntimidacao,.pontosPericiaIntuicao,.pontosPericiaInvestigacao,.pontosPericiaLidarComAnimais,.pontosPericiaMedicina,.pontosPericiaNatureza,.pontosPericiaPercepcao,.pontosPericiaPersuasao,.pontosPericiaPrestidigitacao,.pontosPericiaReligiao,.pontosPericiaSobrevivencia {
     border: none;
     border-bottom: 1px solid black;
-    width: 20%;
-    margin: 0.3em;
+    width: 15%;
+    padding: 0px;
+}
+
+.caixaCaracteristicasEHabilidades {
+    border: 3px double black;
+    padding-top: 1.5em;
+    border-radius: 12px;
+    width: 40%;
+}
+
+
+.caixaStatusDeCombate {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 40%;
+}
+
+.iconeHabilidade {
+    
+}
+
+.caixaArmadura {
+    width: 33%;
+    border: 3px double black;
+}
+
+.caixaIniciativa {
+    width: 33%;
+    border: 3px double black;
+}
+
+.caixaDesloc {
+    width: 33%;
+    border: 3px double black;
+}
+
+.caixaPontosDeVidaAtuais {
+    width: 100%;
 }
