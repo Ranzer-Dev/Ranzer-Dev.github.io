@@ -257,13 +257,49 @@
             </div>
 
             <div class="caixaStatusDeCombate">
-                    <div class="caixaArmadura identificadorCaixa">Classe Armd</div>
-                    <div class="caixaIniciativa identificadorCaixa">Iniciativa</div>
-                    <div class="caixaDesloc identificadorCaixa">Desloc.</div>
-                    <div class="caixaPontosDeVidaAtuais"><p class="identificadorCaixa">Pontos de vida atuais</p></div>
-                    <div class="caixaPontosDeVidaTemporários"><p class="identificadorCaixa">Pontos de vida temporários</p></div>
-                    <div class="caixaDadosDeVida"><p class="identificadorCaixa">Dados de vida</p></div>
-                    <div class="caixaTesteContraMorte"><p class="identificadorCaixa">Teste contra a morte</p></div>
+                    <div class="caixaArmadura identificadorCaixa">
+                        <div class="pontosArmadura">0</div>
+                        Classe Armd
+                    </div>
+                    <div class="caixaIniciativa identificadorCaixa">
+                        <div class="pontosIniciativa">0</div>
+                        Iniciativa
+                    </div>
+                    <div class="caixaDesloc identificadorCaixa">
+                        <div class="pontosDesloc">0</div>
+                        Desloc.
+                    </div>
+                    <div class="caixaPontosDeVidaAtuais">
+                        <label for="pvTotais" class="pvTotaisLabel">PVTotais</label>
+                        <input name="pvTotais" id="pvTotais" type="text"/>
+                        <p class="identificadorCaixa">Pontos de vida atuais</p>
+                    </div>
+                    <div class="caixaPontosDeVidaTemporarios identificadorCaixa">
+                        <div class="pontosDeVidaTemporarios">0</div>
+                        Pontos de vida temporários
+                    </div>
+                    <div class="caixaDadosDeVida">
+                        <div class="caixaInput">
+                        <label for="totalDadosDeVida">Total</label>
+                        <input name="totalDadosDevida" id="totalDadosDeVida" type="text">
+                        </div>
+                        <p class="identificadorCaixa">Dados de vida</p>
+                    </div>
+                    <div class="caixaTesteContraMorte">
+                        <div class="sucessosContraMorte">
+                            <label for="testeContraMorteSucessos">Sucessos</label>
+                            <input name="testeContraMorteSucesso1" id="testeContraMorteSucesso1" type="checkbox">
+                            <input name="testeContraMorteSucesso2" id="testeContraMorteSucesso2" type="checkbox">
+                            <input name="testeContraMorteSucesso3" id="testeContraMorteSucesso3" type="checkbox">
+                        </div>
+                        <div class="fracassosContraMorte">
+                            <label for="testeContraMorte">Fracassos</label>
+                            <input name="testeContraMorteFracassos1" id="testeContraMorteFracassos1" type="checkbox">
+                            <input name="testeContraMorteFracassos2" id="testeContraMorteFracassos2" type="checkbox">
+                            <input name="testeContraMorteFracassos3" id="testeContraMorteFracassos3" type="checkbox">
+                        </div>
+                        <p class="identificadorCaixa">Teste contra a morte</p>
+                    </div>
             </div>
 
         </section>

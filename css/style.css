@@ -193,8 +193,11 @@ body {
 }
 
 .identificadorCaixa {
+    width: 100%;
     font-weight: bold;
     align-self: center;
+    margin: auto;
+    padding-top: 1%;
 }
 
 .caixaResistenciaForca, .caixaResistenciaDestreza, .caixaResistenciaConstituicao, .caixaResistenciaInteligencia, .caixaResistenciaSabedoria, .caixaResistenciaCarisma,.caixaPericiaArcanismo,.caixaPericiaAcrobacia,.caixaPericiaAtletismo,.caixaPericiaAtuacao,.caixaPericiaBlefar,.caixaPericiaFurtividade,.caixaPericiaHistoria,.caixaPericiaIntimidacao,.caixaPericiaIntuicao,.caixaPericiaInvestigacao,.caixaPericiaLidarComAnimais,.caixaPericiaMedicina,.caixaPericiaNatureza,.caixaPericiaPercepcao,.caixaPericiaPersuasao,.caixaPericiaPrestidigitacao,.caixaPericiaReligiao,.caixaPericiaSobrevivencia {
@@ -219,28 +222,120 @@ body {
 
 .caixaStatusDeCombate {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-flow: row wrap;
     align-content: flex-start;
-    width: 40%;
+    width: 30%;
 }
 
 .caixaArmadura {
-    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    width: 20%;
+    min-width: 50px;
     border: 3px double black;
+    border-radius: 20px;
+    height: 64px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
 }
 
 .caixaIniciativa {
-    width: 33%;
+    width: 20%;
+    min-width: 60px;
     border: 3px double black;
 }
 
 .caixaDesloc {
-    width: 33%;
+    width: 20%;
+    min-width: 45px;
     border: 3px double black;
 }
 
 .caixaPontosDeVidaAtuais {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 10px;
+    border: 1px solid black;
+    border-left: 3px double black ;
+    border-right: 3px double black;
+}
+
+.pvTotaisLabel {
+    width: 30%;
+}
+
+#pvTotais {
+    text-align: center;
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#pvTotais:focus {
+    outline: none;
+}
+
+.caixaPontosDeVidaTemporarios {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    border-left: 3px double black ;
+    border-right: 3px double black;
+}
+
+.caixaDadosDeVida {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 50%;
+    border: 1px solid black;
+    border-left: 3px double;
+    border-right: 3px double;
+}
+
+.caixaInput {
+    display: flex;
+    justify-content: space-between;
+    max-height: 1em;
+    width: 100%;
+}
+
+#totalDadosDeVida {
+    text-align: center;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#totalDadosDeVida:focus {
+    outline: none;
+}
+
+.caixaTesteContraMorte {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    border: 1px solid black;
+    border-left: 3px double;
+    border-right: 3px double;
+}
+
+.sucessosContraMorte {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.fracassosContraMorte {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
     width: 100%;
 }
