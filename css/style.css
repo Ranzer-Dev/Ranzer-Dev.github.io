@@ -5,7 +5,8 @@
 
 body {
     min-width: 530px;
-    height: 100vh;
+    max-width: 1024px;
+    margin: 0 auto;
     width: 100vw;
 }
 
@@ -81,8 +82,6 @@ body {
 .statusEAtributrosPersonagem {
     display: flex;
     margin: 0 auto;
-    min-width: 530px;
-    max-width: 800px;
 }
 
 .caixaAtributos {
