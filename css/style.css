@@ -99,6 +99,7 @@ body {
     flex-flow: column nowrap;
     width: 100%;
     width: 71px;
+    min-height: 78px;
     height: 10%;
     border: 3px double black;
     padding: 0.5em 0.5em 0 0.5em;
@@ -228,7 +229,7 @@ body {
     border: 3px double black;
     padding-top: 1.5em;
     border-radius: 12px;
-    width: 40%;
+    width: 100%;
 }
 
 .caixaHabilidades {
