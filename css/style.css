@@ -99,7 +99,7 @@ body {
     flex-flow: column nowrap;
     width: 100%;
     width: 71px;
-    min-height: 78px;
+    min-height: 78.40px;
     height: 10%;
     border: 3px double black;
     padding: 0.5em 0.5em 0 0.5em;
@@ -205,7 +205,6 @@ body {
 
 .identificadorCaixa {
     font-weight: bold;
-    align-self: center;
     margin: 0 auto;
     padding-top: 1%;
 }
@@ -222,12 +221,25 @@ body {
     padding: 0px;
 }
 
+.caixaCaracteristicasEHabilidadesEEquipamentos{
+
+}
+
+.caixaCaracteristicasEHabilidadesEEquipamentos input, label {
+    max-width: 70%;
+    background-color: transparent;
+    width: fit-content;
+    border: none;
+    outline: none;
+}
+
 .caixaCaracteristicasEHabilidades {
     display: flex;
     flex-flow: column nowrap;
     align-content: center;
     border: 3px double black;
-    padding-top: 1.5em;
+    padding: 1em;
+    margin: 1em 0;
     border-radius: 12px;
     width: 100%;
 }
@@ -238,8 +250,27 @@ body {
 }
 
 .iconeHabilidades {
-    width: 20%;
-    padding: 0 1em;
+    width: 33%;
+    padding: 1.5em;
+}
+
+.caixaEquipamentos {
+    border: 3px double black;
+}
+
+.moedaCobre, .moedaPrata, .moedaElektro, .moedaOuro, .moedaPlatina {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    border: 3px double black;
+    border-radius: 6px;
+    width: 12%;
+    min-width: 40px;
+}
+
+.caixaEquipamentos input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .caixaStatusDeCombate {

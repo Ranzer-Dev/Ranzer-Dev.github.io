@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=auto">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/style.css">
     <title>Portifólio</title>
 </head>
+
 <body>
     <header class="caixaPaiNavegacao">
         <nav>
@@ -109,7 +110,7 @@
 
                     <div class="caixaResistenciaConstituicao">
                         <input type="checkbox" name="constituicao" id="constituicao" />
-                        <input type="number" readonly class="pontosResistenciaConstituicao"/>
+                        <input type="number" readonly class="pontosResistenciaConstituicao" />
                         <label for="constituicao">Constituição</label>
                     </div>
 
@@ -247,16 +248,40 @@
                     <p class="identificadorCaixa">Perícias</p>
                 </div>
             </div>
-    
+
             <div class="caixaCaracteristicasEHabilidadesEEquipamentos">
-            <div class="caixaCaracteristicasEHabilidades">
-                <div class="caixaHabilidades">
-                    <img class="iconeHabilidades" src="imgs/iconeHtml2.png" alt="">
-                    <img class="iconeHabilidades" src="imgs/iconeCss1.png" alt="">
-                    <img class="iconeHabilidades" src="imgs/iconeJavaScript3.png" alt="">
+                <div class="caixaCaracteristicasEHabilidades">
+                    <div class="caixaHabilidades">
+                        <img class="iconeHabilidades" src="imgs/iconeHtml2.png" alt="">
+                        <img class="iconeHabilidades" src="imgs/iconeCss1.png" alt="">
+                        <img class="iconeHabilidades" src="imgs/iconeJavaScript3.png" alt="">
+                    </div>
+                    <p class="identificadorCaixa">Características e habilidades</p>
                 </div>
-                <p class="identificadorCaixa">Características e habilidades</p>
-            </div>
+
+                <div class="caixaEquipamentos">
+                    <div class="moedaCobre">
+                        <label for="PC">PC</label>
+                        <input type="number" id="PC">
+                    </div>
+                    <div class="moedaPrata">
+                        <label for="PP">PP</label>
+                        <input type="number" id="PP">
+                    </div>
+                    <div class="moedaElektro">
+                        <label for="PE">PE</label>
+                        <input type="number" id="PE">
+                    </div>
+                    <div class="moedaOuro">
+                        <label for="PO">PO</label>
+                        <input type="number" id="PO">
+                    </div>
+                    <div class="moedaPlatina">
+                        <label for="PL">PL</label>
+                        <input type="number" id="PL">
+                    </div>
+                    <p class="identificadorCaixa">Equipamentos</p>
+                </div>
             </div>
 
 
@@ -278,7 +303,7 @@
                 <div class="caixaSaude">
                     <div class="caixaPontosDeVidaAtuais">
                         <label for="pvTotais" class="pvTotaisLabel">PVTotais</label>
-                        <input name="pvTotais" id="pvTotais" type="text"/>
+                        <input name="pvTotais" id="pvTotais" type="text" />
                         <p class="identificadorCaixa">Pontos de vida atuais</p>
                     </div>
                     <div class="caixaPontosDeVidaTemporarios identificadorCaixa">
@@ -289,8 +314,8 @@
                 <div class="caixaSorte">
                     <div class="caixaDadosDeVida">
                         <div class="caixaInput">
-                        <label for="totalDadosDeVida">Total</label>
-                        <input name="totalDadosDevida" id="totalDadosDeVida" type="text">
+                            <label for="totalDadosDeVida">Total</label>
+                            <input name="totalDadosDevida" id="totalDadosDeVida" type="text">
                         </div>
                         <p class="identificadorCaixa">Dados de vida</p>
                     </div>
