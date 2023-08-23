@@ -17,6 +17,7 @@ body {
 .informacaoPersonagem {
     display: flex;
     margin-bottom: 1em;
+    min-width: 765px;
 }
 
 .nomePersonagem {
@@ -79,7 +80,7 @@ body {
     height: 30%;
 }
 
-.statusEAtributrosPersonagem {
+.caixaStatusGeralPersonagem {
     display: flex;
     margin: 0 auto;
 }
@@ -116,7 +117,10 @@ body {
     max-height: 32px;
 }
 
-.atributosAdicionais{
+.caixaAtributosAdicionais{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
     width: 20%;
     min-width: 160px;
     margin-right: 1em;
@@ -205,8 +209,7 @@ body {
 
 .identificadorCaixa {
     font-weight: bold;
-    margin: 0 auto;
-    padding-top: 1%;
+    margin: 1.5em auto 0 auto;
 }
 
 .caixaResistenciaForca, .caixaResistenciaDestreza, .caixaResistenciaConstituicao, .caixaResistenciaInteligencia, .caixaResistenciaSabedoria, .caixaResistenciaCarisma,.caixaPericiaArcanismo,.caixaPericiaAcrobacia,.caixaPericiaAtletismo,.caixaPericiaAtuacao,.caixaPericiaBlefar,.caixaPericiaFurtividade,.caixaPericiaHistoria,.caixaPericiaIntimidacao,.caixaPericiaIntuicao,.caixaPericiaInvestigacao,.caixaPericiaLidarComAnimais,.caixaPericiaMedicina,.caixaPericiaNatureza,.caixaPericiaPercepcao,.caixaPericiaPersuasao,.caixaPericiaPrestidigitacao,.caixaPericiaReligiao,.caixaPericiaSobrevivencia {
@@ -221,11 +224,14 @@ body {
     padding: 0px;
 }
 
-.caixaCaracteristicasEHabilidadesEEquipamentos{
-
+.caixaCaracteristicasEHabilidadesEEquipamentosEMagias{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin-right: 0.5em;
 }
 
-.caixaCaracteristicasEHabilidadesEEquipamentos input, label {
+.caixaCaracteristicasEHabilidadesEEquipamentosEMagias input, label {
     max-width: 70%;
     background-color: transparent;
     width: fit-content;
@@ -239,23 +245,75 @@ body {
     align-content: center;
     border: 3px double black;
     padding: 1em;
-    margin: 1em 0;
     border-radius: 12px;
     width: 100%;
 }
 
-.caixaHabilidades {
+.caixaHardSkill {
     display: flex;
     justify-content: center;
 }
 
-.iconeHabilidades {
-    width: 33%;
+.iconeHardSkill {
+    width: 20%;
     padding: 1.5em;
+    min-width: 90px;
+    min-height: 90px;
 }
 
-.caixaEquipamentos {
+.caixaSoftSkill {
+    display: flex;
+    margin: 1em 0;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.caixaSoftSkill div {
+    margin: 0.2em 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: left;
+}
+
+.caixaSoftSkillUm::before, .caixaSoftSkillDois::before, .caixaSoftSkillTres::before, .caixaSoftSkillQuatro::before {
+    content: ""; 
+    display: inline-block;
+    margin: 0 1.7em 0 1em;
+    width: 24px;
+    height: 24px;
+    background-size: cover; 
+}
+
+.caixaSoftSkillUm::before {
+    background-image: url(/imgs/book_icon.png);
+}
+
+.caixaSoftSkillDois::before {
+    background-image: url(/imgs/clock_icon.png);
+}
+
+.caixaSoftSkillTres::before {
+    background-image: url(/imgs/diamond.png);
+}
+
+.caixaSoftSkillQuatro::before {
+    background-image: url(/imgs/line.png);
+}
+
+.caixaMoedasEEquipamentos {
     border: 3px double black;
+    padding: 1em;
+    margin: 1em 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.caixaMoedasEEquipamentos input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.caixaMoedas {
+    width: 15%;
 }
 
 .moedaCobre, .moedaPrata, .moedaElektro, .moedaOuro, .moedaPlatina {
@@ -269,14 +327,74 @@ body {
     min-width: 40px;
 }
 
-.caixaEquipamentos input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+.caixaEquipamentos {
+    width: 85%;
+    text-align: left;
+}
+
+.caixaEquipamentos p {
+    display: inline-block;
+}
+
+.arma::before, .armadura::before, .escudo::before, .colar::before, .sapatos::before {
+    content: "";
+    display: inline-block;
+    margin: 0 1.7em 0 1em;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+}
+
+.arma::before {
+    background-image: url(/imgs/icons8-sword-50.png);
+}
+
+.armadura::before {
+    background-image: url(/imgs/icons8-armor-64.png);
+}
+
+.escudo::before {
+    background-image: url(/imgs/icons8-shield-32.png);
+}
+
+.colar::before {
+    background-image: url(/imgs/icons8-necklace-32.png);
+}
+
+.sapatos::before {
+    background-image: url(/imgs/icons8-armored-boot-32.png);
+}
+
+.caixaMagias {
+    display: flex;
+    flex-flow: row wrap;
+    border: 3px double black;
+    padding: 1em;
+
+}
+
+.caixaMagias div{
+   width: 100%;
+}
+
+.beberCafe::before, .darUmaPausa::before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    background-image: url(/imgs/icons8-cafe-32.png);
+}
+
+.darUmaPausa::before {
+    background-image: url(/imgs/icons8-yoga-mat-32.png);
 }
 
 .caixaStatusDeCombate {
     display: flex;
     flex-flow: column nowrap;
     width: 30%;
+    min-width: 200px;
     margin: 0 1em;
 }
 
