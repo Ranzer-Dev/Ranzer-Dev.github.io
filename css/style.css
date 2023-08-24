@@ -10,7 +10,7 @@
 #caixaConteudoGeral {
     text-align: center;
     margin: 0 auto;
-    min-width: 800px;
+    min-width: 1000px;
     max-width: 1200px;
 }
 
@@ -123,7 +123,7 @@
     flex-flow: column;
     justify-content: space-between;
     width: 20%;
-    min-width: 160px;
+    min-width: 180px;
     margin-right: 1em;
 }
 
@@ -400,7 +400,7 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     width: 30%;
-    min-width: 255px;
+    min-width: 258px;
     margin: 0 1em;
 }
 
