@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
 * {
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: 14px;
+    font-family: 'MedievalSharp', cursive;
 }
 
 .caixaNavegacao {
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
+}
+
+.identificadorVisual {
+    font-size: 30px;
+    margin: 0.5em;
+    font-family:
 }
 
 #caixaConteudoGeral {
@@ -22,11 +33,13 @@
 
 .nomePersonagem {
     display: flex;
+    background-color: #fff;
     justify-content: center;
     align-items: flex-end;
 }
 
 .inicioBandeira {
+    position: relative;
     width: 40%;
 }
 
@@ -47,6 +60,7 @@
     height: 1em;
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
+    background-color: #fff;
 }
 
 .especificacoesPersonagem {
@@ -86,7 +100,7 @@
 }
 
 .caixaAtributos {
-    width: 13%;
+    width: 10%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -99,7 +113,7 @@
     align-items: center;
     flex-flow: column nowrap;
     width: 100%;
-    width: 71px;
+    width: 90px;
     min-height: 78.40px;
     height: 10%;
     border: 3px double black;
@@ -262,7 +276,9 @@
     width: 20%;
     padding: 1.5em;
     min-width: 90px;
+    max-width: 150px;
     min-height: 90px;
+    max-height: 150px;
 }
 
 .caixaSoftSkill {
@@ -376,10 +392,12 @@
     border: 3px double black;
     border-radius: 10px;
     padding: 1em 1em 0 1em;
+    text-align: left;
 }
 
 .caixaMagias div{
    width: 100%;
+   padding-bottom: 0.5em;
 }
 
 .beberCafe::before, .darUmaPausa::before {
@@ -387,6 +405,7 @@
     display: inline-block;
     width: 32px;
     height: 32px;
+    margin-right: 1em;
     background-size: cover;
     background-image: url(/imgs/icons8-cafe-32.png);
 }
@@ -575,5 +594,33 @@
 
 .caixaAgradecimentos {
     border: 3px double black;
+    padding: 0em 1em;
     border-radius: 10px;
 }
+
+/*Pagina Contato*/
+
+.caixaContatos {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    flex-flow: column;
+    padding: 1em 0 0 0;
+    border: 3px double black;
+}
+.emConstrucao {
+    display: flex;
+    justify-content: center;
+    margin: 5em;
+}
+
+a:link {
+    text-decoration:none;
+    }
+    a:visited {
+    text-decoration:none;
+    }
+    a:hover {
+    text-decoration:underline;
+    }
