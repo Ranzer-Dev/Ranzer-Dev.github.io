@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
     font-size: 14px;
-    font-family: 'MedievalSharp', cursive;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .caixaNavegacao {
@@ -14,6 +14,7 @@
 
 .identificadorVisual {
     font-size: 30px;
+    font-family: 'MedievalSharp';
     margin: 0.5em;
 }
 
