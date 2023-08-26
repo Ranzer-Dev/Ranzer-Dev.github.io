@@ -270,6 +270,7 @@
 .caixaHardSkill {
     display: flex;
     justify-content: center;
+    animation: bordaAnimada 1.5s infinite alternate ease-in-out;
 }
 
 .iconeHardSkill {
@@ -623,4 +624,10 @@ a:link {
     }
     a:hover {
     text-decoration:underline;
+    }
+
+    @keyframes bordaAnimada {
+        to {
+            box-shadow: 0px 0px 10px;
+        }
     }
