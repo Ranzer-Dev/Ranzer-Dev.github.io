@@ -21,14 +21,16 @@
 #caixaConteudoGeral {
     text-align: center;
     margin: 0 auto;
-    min-width: 1000px;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1160px;
+    box-sizing: border-box;
 }
 
 .informacaoPersonagem {
     display: flex;
     margin-bottom: 1em;
-    min-width: 765px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .nomePersonagem {
@@ -270,7 +272,6 @@
 .caixaHardSkill {
     display: flex;
     justify-content: center;
-    animation: bordaAnimada 1.5s infinite alternate ease-in-out;
 }
 
 .iconeHardSkill {

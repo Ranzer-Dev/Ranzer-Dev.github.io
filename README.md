@@ -30,5 +30,4 @@ Este projeto conta com **duas experiências completas e integradas**:
 ## 📬 Contato
 - **LinkedIn**: [linkedin.com/in/rodolfo-almeida-2352b51b5](https://www.linkedin.com/in/rodolfo-almeida-2352b51b5)
 - **GitHub**: [github.com/Ranzer-Dev](https://github.com/Ranzer-Dev)
-- **WhatsApp**: [(11) 99397-7874](https://wa.me/5511993977874)
 - **E-mail**: [Rodolfo.antunes9@gmail.com](mailto:Rodolfo.antunes9@gmail.com)

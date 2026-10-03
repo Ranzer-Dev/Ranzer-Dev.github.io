@@ -21,30 +21,12 @@
 
 <body>
 
-    <!-- BARRA SUPERIOR DE ALTERNÂNCIA (PROFISSIONAL vs DIVERTIDO) -->
-    <div class="portfolio-switcher-bar" id="portfolioSwitcher">
-        <div class="switcher-inner">
-            <div class="switcher-info">
-                <span class="pulse-dot"></span>
-                <span>Modo de Exibição do Portfólio:</span>
-            </div>
-            <div class="switcher-pills">
-                <a href="index.html" class="switcher-pill active" title="Você está no Portfólio Profissional">
-                    <span>💼 Portfólio Profissional</span>
-                    <span class="badge-tag">Padrão</span>
-                </a>
-                <a href="divertido.html" class="switcher-pill" title="Alternar para a Ficha de Personagem D&D RPG">
-                    <span>⚔️ Portfólio Divertido (Ficha RPG)</span>
-                </a>
-            </div>
-        </div>
-    </div>
 
     <!-- HEADER / NAVEGAÇÃO -->
     <header class="main-header">
         <div class="nav-container">
             <a href="#inicio" class="logo-brand">
-                <span class="logo-badge">&lt;Ranzer.dev /&gt;</span>
+                <span class="logo-badge">&lt;Ranzer<span>.dev</span> /&gt;</span>
             </a>
 
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu de navegação">
@@ -54,14 +36,14 @@
             <nav>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#inicio" class="nav-link active">Início</a></li>
-                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
                     <li><a href="#experiencia" class="nav-link">Experiência</a></li>
                     <li><a href="#projetos" class="nav-link">Projetos</a></li>
                     <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
                     <li><a href="#certificados" class="nav-link">Certificados (86)</a></li>
                     <li><a href="#contato" class="nav-link">Contato</a></li>
                     <li>
-                        <a href="divertido.html" class="btn btn-rpg-highlight" style="padding: 0.35rem 0.9rem; font-size: 0.8rem;">
+                        <a href="divertido.html" class="btn-nav-rpg">
                             ⚔️ Modo RPG
                         </a>
                     </li>
@@ -72,35 +54,35 @@
 
     <main>
 
-        <!-- SEÇÃO HERO -->
+        <!-- SEÇÃO HERO (MINIMALIST TECH CRAFT) -->
         <section class="hero-section" id="inicio">
             <div class="container hero-grid">
                 <div class="hero-content">
                     <div class="hero-badge-status">
-                        <span class="pulse-dot"></span> Estágio FullStack na Prefeitura de Votorantim &amp; FATEC DSM
+                        <span class="pulse-dot"></span> FullStack Engineer • FATEC DSM &amp; Pref. de Votorantim • Inglês Intermediário
                     </div>
 
                     <h1 class="hero-title">
-                        Olá, eu sou <span class="hero-title-highlight">Rodolfo Antunes</span>
+                        Rodolfo Antunes
                     </h1>
 
                     <h2 class="hero-subtitle">
-                        Desenvolvedor FullStack | Node.js • TypeScript • React • Docker
+                        Desenvolvedor <strong>FullStack</strong> • Node.js, TypeScript, React &amp; Docker
                     </h2>
 
                     <p class="hero-lead">
-                        Estudante do <strong>5° semestre na FATEC Votorantim</strong> (DSM) com vivência prática no desenvolvimento de sistemas web, <strong>APIs REST escaláveis</strong> e otimização de consultas SQL. Criador de aplicativos publicados na <strong>Google Play Store</strong> e entusiasta de arquitetura de software limpa.
+                        Estudante do <strong>5° semestre na FATEC Votorantim</strong> (DSM) com <strong>inglês intermediário</strong> (leitura técnica e documentação global) e vivência prática no desenvolvimento de sistemas web, <strong>APIs REST escaláveis</strong> e otimização de consultas SQL. Criador de aplicativos publicados na <strong>Google Play Store</strong> e foco contínuo em arquitetura limpa e testes.
                     </p>
 
                     <div class="hero-cta-group">
                         <a href="#projetos" class="btn btn-primary">
-                            🚀 Explorar Projetos
+                            Explorar Projetos ↗
                         </a>
                         <a href="#certificados" class="btn btn-secondary">
-                            🎓 Ver 86 Certificados
+                            86 Certificados
                         </a>
                         <a href="divertido.html" class="btn btn-rpg-highlight">
-                            ⚔️ Ver Ficha de RPG
+                            ⚔️ Ficha RPG
                         </a>
                     </div>
                 </div>
@@ -131,6 +113,10 @@
                             <span class="card-info-val" style="color: #34d399;">2 na Google Play</span>
                         </div>
                         <div class="card-info-item">
+                            <span class="card-info-label">Idiomas:</span>
+                            <span class="card-info-val" style="color: var(--accent-mint-light);">Inglês Intermediário</span>
+                        </div>
+                        <div class="card-info-item">
                             <span class="card-info-label">Certificações:</span>
                             <span class="card-info-val" style="color: var(--primary-light);">86 Concluídas</span>
                         </div>
@@ -141,9 +127,6 @@
                             </a>
                             <a href="https://github.com/Ranzer-Dev" target="_blank" rel="noopener" class="social-icon-btn" title="GitHub">
                                 Git
-                            </a>
-                            <a href="https://wa.me/5511993977874" target="_blank" rel="noopener" class="social-icon-btn" title="WhatsApp">
-                                Wpp
                             </a>
                             <a href="mailto:Rodolfo.antunes9@gmail.com" class="social-icon-btn" title="E-mail">
                                 @
@@ -158,51 +141,62 @@
         <section class="section-padding" id="sobre">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Perfil &amp; Trajetória</span>
-                    <h2 class="section-title">Resumo Profissional</h2>
-                    <p class="section-desc">Uma combinação entre rigor analítico, melhoria contínua de processos e paixão por desenvolvimento de software.</p>
+                    <span class="section-subtitle">Quem Sou Eu</span>
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <p class="section-desc">Uma trajetória que une a disciplina do controle de qualidade industrial ao desenvolvimento de software moderno, robusto e escalável.</p>
                 </div>
 
-                <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2.5rem; backdrop-filter: blur(12px);">
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="bento-card">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; align-items: start;">
                         <div>
-                            <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--primary-light);">
-                                💻 Foco em Engenharia &amp; Resolução de Problemas
+                            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 1.1rem; color: #ffffff; letter-spacing: -0.01em;">
+                                Da Qualidade Industrial ao Desenvolvimento FullStack
                             </h3>
-                            <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7;">
-                                Cursando o <strong>5° semestre na FATEC Votorantim</strong> no curso de <em>Tecnologia em Desenvolvimento de Software Multiplataforma (DSM)</em>. Possuo experiência prática sólida em desenvolvimento web e APIs com <strong>Node.js, TypeScript, React e Docker</strong> no setor de gestão pública.
+                            <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.75; font-size: 0.95rem;">
+                                Olá! Sou <strong>Rodolfo Antunes</strong>, desenvolvedor FullStack apaixonado por transformar desafios complexos em produtos digitais funcionais, performáticos e bem arquitetados. Atualmente curso o <strong>5° semestre de Desenvolvimento de Software Multiplataforma (DSM) na FATEC Votorantim</strong>.
                             </p>
-                            <p style="color: var(--text-secondary); line-height: 1.7;">
-                                Minha trajetória inclui também uma passagem consistente pela <strong>Power Watts</strong> como Técnico de Produção e Qualidade, onde desenvolvi forte disciplina para análise de dados, controle de métricas e otimização operacional, habilidades que hoje aplico na escrita de código limpo e testes.
+                            <p style="color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.75; font-size: 0.95rem;">
+                                No setor público, atuo como <strong>Estagiário em Desenvolvimento FullStack na Prefeitura de Votorantim</strong>, onde desenvolvo sistemas web para gestão municipal, construo <strong>APIs REST com Node.js e TypeScript</strong>, gerencio ambientes conteinerizados com <strong>Docker</strong> e otimizo rotinas SQL para auditoria e controle de dados.
+                            </p>
+                            <p style="color: var(--text-secondary); line-height: 1.75; font-size: 0.95rem;">
+                                Minha formação técnica foi impulsionada pela experiência de mais de 2 anos na <strong>Power Watts</strong> como Técnico de Produção e Qualidade. Essa vivência industrial consolidou em mim a convicção de que <em>qualidade não se testa apenas no final, mas se projeta na base</em> — mentalidade que levo para a escrita de testes, aplicação de princípios SOLID e criação de código limpo.
                             </p>
                         </div>
 
                         <div>
-                            <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--primary-light);">
-                                🎯 Destaques e Objetivos
+                            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 1.2rem; color: #ffffff; letter-spacing: -0.01em;">
+                                Pilares de Atuação &amp; Diferenciais
                             </h3>
-                            <div style="display: flex; flex-direction: column; gap: 0.9rem;">
-                                <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
-                                    <span style="background: rgba(14, 165, 233, 0.15); color: var(--primary); padding: 4px 8px; border-radius: 6px; font-weight: bold;">01</span>
+                            <div style="display: flex; flex-direction: column; gap: 1.1rem;">
+                                <div style="display: flex; gap: 0.9rem; align-items: flex-start;">
+                                    <span style="font-family: var(--font-mono); color: var(--accent-mint-light); font-size: 0.8rem; font-weight: 700; padding: 3px 7px; background: rgba(16, 185, 129, 0.08); border: 1px solid var(--border-mint); border-radius: var(--radius-sm);">01</span>
                                     <div>
-                                        <h4 style="font-size: 0.95rem; font-weight: 700;">Publicação de Ponta a Ponta</h4>
-                                        <p style="color: var(--text-muted); font-size: 0.85rem;">Desenvolvimento completo e publicação autônoma de apps nativos/mobile na Google Play Store.</p>
+                                        <h4 style="font-size: 0.95rem; font-weight: 700; color: #ffffff; margin-bottom: 3px;">Publicação Autônoma de Apps</h4>
+                                        <p style="color: var(--text-secondary); font-size: 0.86rem; line-height: 1.55;">Condução autônoma de ponta a ponta: concepção, UI, arquitetura lógica, testes e publicação oficial de aplicativos na <strong>Google Play Store</strong>.</p>
                                     </div>
                                 </div>
 
-                                <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
-                                    <span style="background: rgba(14, 165, 233, 0.15); color: var(--primary); padding: 4px 8px; border-radius: 6px; font-weight: bold;">02</span>
+                                <div style="display: flex; gap: 0.9rem; align-items: flex-start;">
+                                    <span style="font-family: var(--font-mono); color: var(--accent-mint-light); font-size: 0.8rem; font-weight: 700; padding: 3px 7px; background: rgba(16, 185, 129, 0.08); border: 1px solid var(--border-mint); border-radius: var(--radius-sm);">02</span>
                                     <div>
-                                        <h4 style="font-size: 0.95rem; font-weight: 700;">Arquitetura &amp; Boas Práticas</h4>
-                                        <p style="color: var(--text-muted); font-size: 0.85rem;">Estudo contínuo e aplicação de SOLID, DDD com Dapper, conteinerização com Docker e APIs RESTful com Fastify/Express.</p>
+                                        <h4 style="font-size: 0.95rem; font-weight: 700; color: #ffffff; margin-bottom: 3px;">Arquitetura &amp; Boas Práticas</h4>
+                                        <p style="color: var(--text-secondary); font-size: 0.86rem; line-height: 1.55;">Prática consistente de SOLID, conteinerização Docker, microsserviços RESTful com Fastify e Express, e modelagem relacional orientada a desempenho.</p>
                                     </div>
                                 </div>
 
-                                <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
-                                    <span style="background: rgba(14, 165, 233, 0.15); color: var(--primary); padding: 4px 8px; border-radius: 6px; font-weight: bold;">03</span>
+                                <div style="display: flex; gap: 0.9rem; align-items: flex-start;">
+                                    <span style="font-family: var(--font-mono); color: var(--accent-mint-light); font-size: 0.8rem; font-weight: 700; padding: 3px 7px; background: rgba(16, 185, 129, 0.08); border: 1px solid var(--border-mint); border-radius: var(--radius-sm);">03</span>
                                     <div>
-                                        <h4 style="font-size: 0.95rem; font-weight: 700;">Aprendizado e Evolução Contínua</h4>
-                                        <p style="color: var(--text-muted); font-size: 0.85rem;">Mais de 500 horas de cursos extracurriculares concluídos em plataformas líderes (DIO, Alura, DevMedia).</p>
+                                        <h4 style="font-size: 0.95rem; font-weight: 700; color: #ffffff; margin-bottom: 3px;">Evolução Contínua Comprovada</h4>
+                                        <p style="color: var(--text-secondary); font-size: 0.86rem; line-height: 1.55;">Mais de 500 horas de cursos e <strong>86 certificações</strong> validadas em Cloud, Agentes de IA, ecossistema Java e desenvolvimento Node.js.</p>
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; gap: 0.9rem; align-items: flex-start;">
+                                    <span style="font-family: var(--font-mono); color: var(--accent-mint-light); font-size: 0.8rem; font-weight: 700; padding: 3px 7px; background: rgba(16, 185, 129, 0.08); border: 1px solid var(--border-mint); border-radius: var(--radius-sm);">04</span>
+                                    <div>
+                                        <h4 style="font-size: 0.95rem; font-weight: 700; color: #ffffff; margin-bottom: 3px;">Comunicação &amp; Inglês Técnico</h4>
+                                        <p style="color: var(--text-secondary); font-size: 0.86rem; line-height: 1.55;">Postura profissional transparente, alinhamento ágil com equipes e <strong>inglês intermediário</strong> para leitura fluida de documentações técnicas, RFCs e comunicação global.</p>
                                     </div>
                                 </div>
                             </div>
@@ -301,7 +295,7 @@
                             </div>
                         </div>
                         <div class="project-links">
-                            <a href="https://play.google.com/store" target="_blank" rel="noopener" class="link-btn link-btn-play">
+                            <a href="https://play.google.com/store/apps/details?id=com.SuaEmpresa.TimeStation" target="_blank" rel="noopener" class="link-btn link-btn-play">
                                 <span>Ver na Google Play</span> ↗
                             </a>
                         </div>
@@ -324,8 +318,35 @@
                             </div>
                         </div>
                         <div class="project-links">
-                            <a href="https://play.google.com/store" target="_blank" rel="noopener" class="link-btn link-btn-play">
+                            <a href="https://play.google.com/store/apps/details?id=com.ranzerdev.topbrain" target="_blank" rel="noopener" class="link-btn link-btn-play">
                                 <span>Ver na Google Play</span> ↗
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- NotaGest: Sistema Integrado (FATEC) -->
+                    <div class="project-card">
+                        <span class="project-badge-top" style="color: var(--accent-mint-light); border-color: var(--border-mint);">FATEC DSM</span>
+                        <div>
+                            <div class="project-icon-box">📊</div>
+                            <h3 class="project-title">NotaGest: Sistema Integrado</h3>
+                            <p class="project-desc">
+                                Projeto integrador acadêmico contínuo na FATEC para gestão e controle institucional, arquitetado com TypeScript, React e Node.js. Interface moderna com dashboards analíticos, relatórios e deploy automatizado na nuvem.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Vite</span>
+                                <span class="tech-tag">Deploy Vercel</span>
+                            </div>
+                        </div>
+                        <div class="project-links" style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+                            <a href="https://github.com/Ranzer-Dev/NotaGestFinal" target="_blank" rel="noopener" class="link-btn link-btn-code">
+                                <span>Código no GitHub</span> ↗
+                            </a>
+                            <a href="https://nota-gest-final.vercel.app" target="_blank" rel="noopener" class="link-btn link-btn-play">
+                                <span>Deploy Online</span> ↗
                             </a>
                         </div>
                     </div>
@@ -346,7 +367,7 @@
                             </div>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Ranzer-Dev" target="_blank" rel="noopener" class="link-btn link-btn-code">
+                            <a href="https://github.com/Ranzer-Dev/Gerenciador_Podcasts" target="_blank" rel="noopener" class="link-btn link-btn-code">
                                 <span>Código no GitHub</span> ↗
                             </a>
                         </div>
@@ -363,55 +384,55 @@
                             <div class="project-tags">
                                 <span class="tech-tag">Fastify</span>
                                 <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">JSON Schema</span>
+                                <span class="tech-tag">TypeScript</span>
                                 <span class="tech-tag">Clean Code</span>
                             </div>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Ranzer-Dev" target="_blank" rel="noopener" class="link-btn link-btn-code">
+                            <a href="https://github.com/Ranzer-Dev/ApiMinimaFormula-1" target="_blank" rel="noopener" class="link-btn link-btn-code">
                                 <span>Código no GitHub</span> ↗
                             </a>
                         </div>
                     </div>
 
-                    <!-- API Champions League com Express -->
+                    <!-- Gerenciador de Poções API REST -->
                     <div class="project-card">
                         <div>
-                            <div class="project-icon-box">⚽</div>
-                            <h3 class="project-title">API Champions League</h3>
+                            <div class="project-icon-box">🧪</div>
+                            <h3 class="project-title">Gerenciador de Poções API REST</h3>
                             <p class="project-desc">
-                                Backend com Express para gerenciar dados de clubes europeus, estatísticas e confrontos da UEFA Champions League. Implementação de rotas protegidas, paginação de resultados e arquitetura de controllers e services.
+                                API RESTful construída em TypeScript focada em consolidação de padrões arquiteturais limpos, tipagem estrita, separação de responsabilidades (SOLID) e contratos bem definidos para consumo front-end.
                             </p>
                             <div class="project-tags">
-                                <span class="tech-tag">Express.js</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">CRUD</span>
-                                <span class="tech-tag">RESTful</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">SOLID</span>
+                                <span class="tech-tag">RESTful API</span>
                             </div>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Ranzer-Dev" target="_blank" rel="noopener" class="link-btn link-btn-code">
+                            <a href="https://github.com/Ranzer-Dev/Gerenciador-de-Pocoes" target="_blank" rel="noopener" class="link-btn link-btn-code">
                                 <span>Código no GitHub</span> ↗
                             </a>
                         </div>
                     </div>
 
-                    <!-- Gerador de QR Code para E-commerce -->
+                    <!-- Gerador de QR Code e Senhas -->
                     <div class="project-card">
                         <div>
-                            <div class="project-icon-box">🛍️</div>
-                            <h3 class="project-title">Gerador de QR Code &amp; Checkout</h3>
+                            <div class="project-icon-box">🔑</div>
+                            <h3 class="project-title">Gerador de QR Code &amp; Senha</h3>
                             <p class="project-desc">
-                                Utilitário para automação de pagamentos e identificação de pedidos em ambientes de comércio eletrônico, integrado com geração de códigos de barra e QR codes dinâmicos via Node.js.
+                                Aplicação desenvolvida para geração dinâmica de QR codes para identificação e pagamentos, acompanhada de um gerador criptográfico customizável de senhas seguras utilizando o ecossistema de pacotes Node.js.
                             </p>
                             <div class="project-tags">
                                 <span class="tech-tag">Node.js</span>
                                 <span class="tech-tag">NPM Packages</span>
-                                <span class="tech-tag">E-commerce</span>
+                                <span class="tech-tag">CLI / Scripting</span>
                             </div>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Ranzer-Dev" target="_blank" rel="noopener" class="link-btn link-btn-code">
+                            <a href="https://github.com/Ranzer-Dev/Gerador_QRcode_e_Senha" target="_blank" rel="noopener" class="link-btn link-btn-code">
                                 <span>Código no GitHub</span> ↗
                             </a>
                         </div>
@@ -494,15 +515,15 @@
                         </div>
                     </div>
 
-                    <!-- Boas Práticas & IA -->
+                    <!-- Boas Práticas & Idiomas -->
                     <div class="skill-card">
-                        <h3 class="skill-card-title">🤖 Boas Práticas &amp; IA</h3>
+                        <h3 class="skill-card-title">🤖 Boas Práticas &amp; Idiomas</h3>
                         <div class="skill-pill-list">
                             <span class="skill-pill">Metodologia Scrum</span>
                             <span class="skill-pill">Princípios SOLID</span>
                             <span class="skill-pill">Engenharia de Prompts</span>
                             <span class="skill-pill">Agentes &amp; LLMs</span>
-                            <span class="skill-pill">Inglês Intermediário</span>
+                            <span class="skill-pill" style="border-color: rgba(56, 189, 248, 0.4); color: #38bdf8; font-weight: 600;">🌐 Inglês Intermediário (Técnico / Leitura)</span>
                         </div>
                     </div>
                 </div>
@@ -580,49 +601,43 @@
                 </div>
 
                 <div class="contact-grid">
-                    <!-- WhatsApp -->
-                    <div class="contact-card">
-                        <div class="contact-icon-box">💬</div>
-                        <div>
-                            <div class="contact-info-title">WhatsApp / Celular</div>
-                            <a href="https://wa.me/5511993977874" target="_blank" rel="noopener" class="contact-info-val">
-                                (11) 99397-7874
-                            </a>
-                            <button type="button" class="btn-copy" data-copy="11993977874" title="Copiar número">Copiar</button>
-                        </div>
-                    </div>
-
-                    <!-- E-mail -->
+                    <!-- E-mail Profissional -->
                     <div class="contact-card">
                         <div class="contact-icon-box">✉️</div>
-                        <div>
+                        <div class="contact-info-body">
                             <div class="contact-info-title">E-mail Profissional</div>
-                            <a href="mailto:Rodolfo.antunes9@gmail.com" class="contact-info-val">
-                                Rodolfo.antunes9@gmail.com
-                            </a>
-                            <button type="button" class="btn-copy" data-copy="Rodolfo.antunes9@gmail.com" title="Copiar e-mail">Copiar</button>
+                            <div class="contact-val-row">
+                                <a href="mailto:Rodolfo.antunes9@gmail.com" class="contact-info-val">
+                                    Rodolfo.antunes9@gmail.com
+                                </a>
+                                <button type="button" class="btn-copy" data-copy="Rodolfo.antunes9@gmail.com" title="Copiar e-mail">Copiar</button>
+                            </div>
                         </div>
                     </div>
 
                     <!-- LinkedIn -->
                     <div class="contact-card">
                         <div class="contact-icon-box">👔</div>
-                        <div>
+                        <div class="contact-info-body">
                             <div class="contact-info-title">LinkedIn</div>
-                            <a href="https://www.linkedin.com/in/rodolfo-almeida-2352b51b5" target="_blank" rel="noopener" class="contact-info-val">
-                                in/rodolfo-almeida-2352b51b5
-                            </a>
+                            <div class="contact-val-row">
+                                <a href="https://www.linkedin.com/in/rodolfo-almeida-2352b51b5" target="_blank" rel="noopener" class="contact-info-val">
+                                    in/rodolfo-almeida-2352b51b5
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <!-- GitHub -->
                     <div class="contact-card">
                         <div class="contact-icon-box">🐙</div>
-                        <div>
+                        <div class="contact-info-body">
                             <div class="contact-info-title">GitHub</div>
-                            <a href="https://github.com/Ranzer-Dev" target="_blank" rel="noopener" class="contact-info-val">
-                                github.com/Ranzer-Dev
-                            </a>
+                            <div class="contact-val-row">
+                                <a href="https://github.com/Ranzer-Dev" target="_blank" rel="noopener" class="contact-info-val">
+                                    github.com/Ranzer-Dev
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
