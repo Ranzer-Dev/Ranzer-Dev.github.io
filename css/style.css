@@ -306,19 +306,19 @@
 }
 
 .caixaSoftSkillUm::before {
-    background-image: url(/imgs/book_icon.png);
+    background-image: url('../imgs/book_icon.png');
 }
 
 .caixaSoftSkillDois::before {
-    background-image: url(/imgs/clock_icon.png);
+    background-image: url('../imgs/clock_icon.png');
 }
 
 .caixaSoftSkillTres::before {
-    background-image: url(/imgs/diamond.png);
+    background-image: url('../imgs/diamond.png');
 }
 
 .caixaSoftSkillQuatro::before {
-    background-image: url(/imgs/line.png);
+    background-image: url('../imgs/line.png');
 }
 
 .caixaMoedasEEquipamentos {
@@ -368,23 +368,23 @@
 }
 
 .arma::before {
-    background-image: url(/imgs/icons8-sword-50.png);
+    background-image: url('../imgs/icons8-sword-50.png');
 }
 
 .armadura::before {
-    background-image: url(/imgs/icons8-armor-64.png);
+    background-image: url('../imgs/icons8-armor-64.png');
 }
 
 .escudo::before {
-    background-image: url(/imgs/icons8-shield-32.png);
+    background-image: url('../imgs/icons8-shield-32.png');
 }
 
 .colar::before {
-    background-image: url(/imgs/icons8-necklace-32.png);
+    background-image: url('../imgs/icons8-necklace-32.png');
 }
 
 .sapatos::before {
-    background-image: url(/imgs/icons8-armored-boot-32.png);
+    background-image: url('../imgs/icons8-armored-boot-32.png');
 }
 
 .caixaMagias {
@@ -408,11 +408,11 @@
     height: 32px;
     margin-right: 1em;
     background-size: cover;
-    background-image: url(/imgs/icons8-cafe-32.png);
+    background-image: url('../imgs/icons8-cafe-32.png');
 }
 
 .darUmaPausa::before {
-    background-image: url(/imgs/icons8-yoga-mat-32.png);
+    background-image: url('../imgs/icons8-yoga-mat-32.png');
 }
 
 .caixaStatusDeCombateEAparenciaPersonagem {
@@ -631,3 +631,4 @@ a:link {
             box-shadow: 0px 0px 10px;
         }
     }
+

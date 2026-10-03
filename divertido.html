@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rpg.css">
+    <title>Rodolfo Antunes | Ficha de Personagem D&D 5e</title>
+</head>
+
+<body class="modo-rpg">
+    <!-- Barra Superior de Alternância de Portfólio -->
+    <header class="switcher-container">
+        <div class="portfolio-switcher">
+            <span class="switcher-label">Modo de Exibição:</span>
+            <div class="switch-group">
+                <a href="index.html" class="switch-btn">
+                    💼 Portfólio Profissional (Padrão)
+                </a>
+                <a href="divertido.html" class="switch-btn active">
+                    ⚔️ Portfólio Divertido (Ficha RPG)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="rpg-sheet-wrapper">
+        <main id="caixaConteudoGeral">
+
+            <div class="identificadorVisual">⚔️ Ficha de Personagem D&D 5e ⚔️</div>
+
+            <!-- Rolador de Dados D20 Interativo (Somente o Dado Gira) -->
+            <section class="d20-card-box">
+                <div class="d20-dice-wrapper" id="d20DiceWrapper" title="Clique no dado para rolar!">
+                    <div id="d20Dice" class="d20-dice">
+                        <svg class="d20-svg" viewBox="0 0 100 100">
+                            <!-- Polígono Icosaedro D20 -->
+                            <polygon points="50,5 92,28 92,72 50,95 8,72 8,28" fill="#181818" stroke="#ffffff" stroke-width="2.5" />
+                            <polygon points="50,5 8,28 50,52" fill="#2d2d2d" stroke="#ffffff" stroke-width="1.2" />
+                            <polygon points="50,5 92,28 50,52" fill="#383838" stroke="#ffffff" stroke-width="1.2" />
+                            <polygon points="8,28 8,72 50,52" fill="#222222" stroke="#ffffff" stroke-width="1.2" />
+                            <polygon points="92,28 92,72 50,52" fill="#282828" stroke="#ffffff" stroke-width="1.2" />
+                            <polygon points="8,72 50,95 50,52" fill="#161616" stroke="#ffffff" stroke-width="1.2" />
+                            <polygon points="92,72 50,95 50,52" fill="#1f1f1f" stroke="#ffffff" stroke-width="1.2" />
+                        </svg>
+                        <span id="d20Value" class="d20-number">20</span>
+                    </div>
+                </div>
+                <div class="d20-info-col">
+                    <button id="btnRolarD20" class="btn-d20-roll" type="button">🎲 Rolar Teste de D20</button>
+                    <span id="d20ResultLabel" class="d20-result-label">Clique no dado ou botão para testar sua perícia</span>
+                </div>
+            </section>
+
+            <!-- Informações do Personagem (Cabeçalho da Ficha) -->
+            <section class="informacaoPersonagem">
+
+                <div class="caixaNomePersonagem" id="blocoNomePersonagem">
+                    <div class="nomePersonagemValor">Ranzer</div>
+                    <div class="labelNomePersonagem">Nome do Personagem</div>
+                </div>
+
+                <div class="especificacoesPersonagem" id="blocoEspecificacoesPersonagem">
+
+                    <div class="classeENivel">
+                        <p>Desenvolvedor FullStack - Nível 5</p>
+                        <p class="subtituloCampoTexto">Classe / Nível</p>
+                    </div>
+
+                    <div class="antecedente">
+                        <p>Estagiário na Pref. de Votorantim</p>
+                        <p class="subtituloCampoTexto">Antecedente</p>
+                    </div>
+
+                    <div class="nomeJogador">
+                        <p>Rodolfo Antunes</p>
+                        <p class="subtituloCampoTexto">Jogador</p>
+                    </div>
+
+                    <div class="racaJogador">
+                        <p>Humano Coder</p>
+                        <p class="subtituloCampoTexto">Raça</p>
+                    </div>
+
+                    <div class="tendencia">
+                        <p>Neutro-Bom</p>
+                        <p class="subtituloCampoTexto">Tendência</p>
+                    </div>
+
+                    <div class="experienciaJogador">
+                        <p>5º Semestre FATEC (DSM)</p>
+                        <p class="subtituloCampoTexto">Experiência</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Status Geral do Personagem (3 Colunas) -->
+            <section class="caixaStatusGeralPersonagem">
+
+                <!-- COLUNA 1: Atributos, Resistências e Perícias -->
+                <div class="caixaAtributos">
+
+                    <div class="caixaForca identificadorCaixa">Força
+                        <div class="pontosForca">15</div>
+                        <span class="mod-tag modificadorForca">+2</span>
+                    </div>
+
+                    <div class="caixaDestreza identificadorCaixa">Destreza
+                        <div class="pontosDestreza">15</div>
+                        <span class="mod-tag modificadorDestreza">+2</span>
+                    </div>
+
+                    <div class="caixaConstituicao identificadorCaixa">Constituição
+                        <div class="pontosConstituicao">15</div>
+                        <span class="mod-tag modificadorConstituicao">+2</span>
+                    </div>
+
+                    <div class="caixaInteligencia identificadorCaixa">Inteligência
+                        <div class="pontosInteligencia">15</div>
+                        <span class="mod-tag modificadorInteligencia">+2</span>
+                    </div>
+
+                    <div class="caixaSabedoria identificadorCaixa">Sabedoria
+                        <div class="pontosSabedoria">15</div>
+                        <span class="mod-tag modificadorSabedoria">+2</span>
+                    </div>
+
+                    <div class="caixaCarisma identificadorCaixa">Carisma
+                        <div class="pontosCarisma">15</div>
+                        <span class="mod-tag modificadorCarisma">+2</span>
+                    </div>
+
+                </div>
+
+                <div class="caixaAtributosAdicionais">
+
+                    <div class="caixaInspiracao identificadorCaixa">
+                        <div class="pontosInspiracao">1</div>
+                        <div class="inspiracao">Inspiração</div>
+                    </div>
+
+                    <div class="caixaBonusProficiencia identificadorCaixa">
+                        <div class="pontosBonusProficiencia">+2</div>
+                        <div class="bonusProficiencia">Proficiência</div>
+                        <div class="completaBordaBonusProficiencia"></div>
+                    </div>
+
+                    <div class="caixaTesteDeResistencias">
+                        <div class="caixaResistenciaForca">
+                            <input type="checkbox" name="forca" id="forca" />
+                            <input type="text" readonly class="pontosResistenciaForca" />
+                            <label for="forca">Força</label>
+                        </div>
+
+                        <div class="caixaResistenciaDestreza">
+                            <input type="checkbox" name="destreza" id="destreza" />
+                            <input type="text" readonly class="pontosResistenciaDestreza" />
+                            <label for="destreza">Destreza</label>
+                        </div>
+
+                        <div class="caixaResistenciaConstituicao">
+                            <input type="checkbox" name="constituicao" id="constituicao" />
+                            <input type="text" readonly class="pontosResistenciaConstituicao" />
+                            <label for="constituicao">Constituição</label>
+                        </div>
+
+                        <div class="caixaResistenciaInteligencia">
+                            <input type="checkbox" name="inteligencia" id="inteligencia" checked />
+                            <input type="text" readonly class="pontosResistenciaInteligencia" />
+                            <label for="inteligencia">Inteligência</label>
+                        </div>
+
+                        <div class="caixaResistenciaSabedoria">
+                            <input type="checkbox" name="sabedoria" id="sabedoria" checked />
+                            <input type="text" readonly class="pontosResistenciaSabedoria" />
+                            <label for="sabedoria">Sabedoria</label>
+                        </div>
+
+                        <div class="caixaResistenciaCarisma">
+                            <input type="checkbox" name="carisma" id="carisma" />
+                            <input type="text" readonly class="pontosResistenciaCarisma" />
+                            <label for="carisma">Carisma</label>
+                        </div>
+
+                        <p class="identificadorCaixa">Testes de Resistência</p>
+                    </div>
+
+                    <div class="caixaPericias">
+
+                        <div class="caixaPericiaAcrobacia">
+                            <input type="checkbox" name="acrobacia" id="acrobacia">
+                            <input type="text" readonly class="pontosPericiaAcrobacia">
+                            <label for="acrobacia">Acrobacia (Des)</label>
+                        </div>
+
+                        <div class="caixaPericiaArcanismo">
+                            <input type="checkbox" name="arcanismo" id="arcanismo" checked>
+                            <input type="text" readonly class="pontosPericiaArcanismo">
+                            <label for="arcanismo">Arcanismo / Código (Int)</label>
+                        </div>
+
+                        <div class="caixaPericiaAtletismo">
+                            <input type="checkbox" name="atletismo" id="atletismo">
+                            <input type="text" readonly class="pontosPericiaAtletismo">
+                            <label for="atletismo">Atletismo (For)</label>
+                        </div>
+
+                        <div class="caixaPericiaAtuacao">
+                            <input type="checkbox" name="atuacao" id="atuacao">
+                            <input type="text" readonly class="pontosPericiaAtuacao">
+                            <label for="atuacao">Atuação (Car)</label>
+                        </div>
+
+                        <div class="caixaPericiaBlefar">
+                            <input type="checkbox" name="blefar" id="blefar">
+                            <input type="text" readonly class="pontosPericiaBlefar">
+                            <label for="blefar">Blefar (Car)</label>
+                        </div>
+
+                        <div class="caixaPericiaFurtividade">
+                            <input type="checkbox" name="furtividade" id="furtividade">
+                            <input type="text" readonly class="pontosPericiaFurtividade">
+                            <label for="furtividade">Furtividade (Des)</label>
+                        </div>
+
+                        <div class="caixaPericiaHistoria">
+                            <input type="checkbox" name="historia" id="historia">
+                            <input type="text" readonly class="pontosPericiaHistoria">
+                            <label for="historia">História (Int)</label>
+                        </div>
+
+                        <div class="caixaPericiaIntimidacao">
+                            <input type="checkbox" name="intimidacao" id="intimidacao">
+                            <input type="text" readonly class="pontosPericiaIntimidacao">
+                            <label for="intimidacao">Intimidação (Car)</label>
+                        </div>
+
+                        <div class="caixaPericiaIntuicao">
+                            <input type="checkbox" name="intuicao" id="intuicao">
+                            <input type="text" readonly class="pontosPericiaIntuicao">
+                            <label for="intuicao">Intuição (Sab)</label>
+                        </div>
+
+                        <div class="caixaPericiaInvestigacao">
+                            <input type="checkbox" name="investigacao" id="investigacao" checked>
+                            <input type="text" readonly class="pontosPericiaInvestigacao">
+                            <label for="investigacao">Investigação / Debug (Int)</label>
+                        </div>
+
+                        <div class="caixaPericiaLidarComAnimais">
+                            <input type="checkbox" name="lidarComAnimais" id="lidarComAnimais">
+                            <input type="text" readonly class="pontosPericiaLidarComAnimais">
+                            <label for="lidarComAnimais">Lidar com Animais (Sab)</label>
+                        </div>
+
+                        <div class="caixaPericiaMedicina">
+                            <input type="checkbox" name="medicina" id="medicina">
+                            <input type="text" readonly class="pontosPericiaMedicina">
+                            <label for="medicina">Medicina (Sab)</label>
+                        </div>
+
+                        <div class="caixaPericiaNatureza">
+                            <input type="checkbox" name="natureza" id="natureza">
+                            <input type="text" readonly class="pontosPericiaNatureza">
+                            <label for="natureza">Natureza (Int)</label>
+                        </div>
+
+                        <div class="caixaPericiaPercepcao">
+                            <input type="checkbox" name="percepcao" id="percepcao" checked>
+                            <input type="text" readonly class="pontosPericiaPercepcao">
+                            <label for="percepcao">Percepção (Sab)</label>
+                        </div>
+
+                        <div class="caixaPericiaPersuasao">
+                            <input type="checkbox" name="persuasao" id="persuasao">
+                            <input type="text" readonly class="pontosPericiaPersuasao">
+                            <label for="persuasao">Persuasão (Car)</label>
+                        </div>
+
+                        <div class="caixaPericiaPrestidigitacao">
+                            <input type="checkbox" name="prestidigitacao" id="prestidigitacao">
+                            <input type="text" readonly class="pontosPericiaPrestidigitacao">
+                            <label for="prestidigitacao">Prestidigitação (Des)</label>
+                        </div>
+
+                        <div class="caixaPericiaReligiao">
+                            <input type="checkbox" name="religiao" id="religiao">
+                            <input type="text" readonly class="pontosPericiaReligiao">
+                            <label for="religiao">Religião (Int)</label>
+                        </div>
+
+                        <div class="caixaPericiaSobrevivencia">
+                            <input type="checkbox" name="sobrevivencia" id="sobrevivencia">
+                            <input type="text" readonly class="pontosPericiaSobrevivencia">
+                            <label for="sobrevivencia">Sobrevivência (Sab)</label>
+                        </div>
+
+                        <p class="identificadorCaixa">Perícias</p>
+
+                    </div>
+                </div>
+
+                <!-- COLUNA 2: Habilidades, Moedas & Equipamentos lado a lado, Magias -->
+                <div class="caixaCaracteristicasEHabilidadesEEquipamentosEMagias">
+
+                    <!-- Hard e Soft Skills -->
+                    <div class="caixaCaracteristicasEHabilidades">
+                        <p class="identificadorCaixa">Hard Skills:</p>
+
+                        <div class="caixaHardSkill">
+                            <img class="iconeHardSkill" src="imgs/iconeHtml2.png" alt="HTML5" title="HTML5">
+                            <img class="iconeHardSkill" src="imgs/iconeCss1.png" alt="CSS3" title="CSS3">
+                            <img class="iconeHardSkill" src="imgs/iconeJavaScript3.png" alt="JavaScript" title="JavaScript">
+                        </div>
+
+                        <div class="caixaSoftSkill">
+                            <p class="identificadorCaixa">Soft Skills:</p>
+                            <div class="caixaSoftSkillUm">Tenho facilidade e agilidade em aprender</div>
+                            <div class="caixaSoftSkillDois">Comprometido com prazos e entregas</div>
+                            <div class="caixaSoftSkillTres">Foco em qualidade de código e arquitetura limpa</div>
+                            <div class="caixaSoftSkillQuatro">Comunicação clara, direta e objetiva</div>
+                        </div>
+
+                        <p class="identificadorCaixa">Características e Habilidades</p>
+                    </div>
+
+                    <!-- Moedas e Equipamentos LADO A LADO -->
+                    <div class="caixaMoedasEEquipamentos">
+
+                        <!-- Coluna Moedas (Esquerda) -->
+                        <div class="caixaMoedas">
+                            <div class="moedaCobre">
+                                <label for="PC">PC</label>
+                                <input type="number" id="PC" value="50">
+                            </div>
+
+                            <div class="moedaPrata">
+                                <label for="PP">PP</label>
+                                <input type="number" id="PP" value="20">
+                            </div>
+
+                            <div class="moedaElektro">
+                                <label for="PE">PE</label>
+                                <input type="number" id="PE" value="10">
+                            </div>
+
+                            <div class="moedaOuro">
+                                <label for="PO">PO</label>
+                                <input type="number" id="PO" value="100">
+                            </div>
+
+                            <div class="moedaPlatina">
+                                <label for="PL">PL</label>
+                                <input type="number" id="PL" value="5">
+                            </div>
+                        </div>
+
+                        <!-- Coluna Equipamentos com Ícones Oficiais (Direita) -->
+                        <div class="caixaEquipamentos">
+                            <div class="arma"><p>Mouse Ergonômico & Teclado</p></div>
+                            <div class="armadura"><p>Camiseta Gamer de Algodão</p></div>
+                            <div class="escudo"><p>Monitor Duplo Ultrawide</p></div>
+                            <div class="colar"><p>Crachá FATEC / Prefeitura</p></div>
+                            <div class="sapatos"><p>Pantufas de Conforto +3</p></div>
+                        </div>
+
+                        <!-- Artefatos Lendários Publicados -->
+                        <div class="itens-lendarios-rpg">
+                            <strong>⚔️ Artefatos Lendários Publicados:</strong>
+                            <div>📱 <strong>Smart Timer: HIIT e Tabata</strong> — Google Play</div>
+                            <div>🧠 <strong>TopBrain: Jogos Cognitivos</strong> — Google Play</div>
+                        </div>
+
+                        <p class="identificadorCaixa">Moedas e Equipamentos</p>
+                    </div>
+
+                    <!-- Magias e Ataques -->
+                    <div class="caixaMagias">
+                        <div class="beberCafe" title="Clique para tomar café!">
+                            Beber Café (+5 Foco, Inteligência e Agilidade de Código)
+                        </div>
+                        <div class="darUmaPausa" title="Clique para dar uma pausa!">
+                            Dar uma Pausa (Restaura Vitalidade, reduz estresse e limpa a mente)
+                        </div>
+                        <p class="identificadorCaixa">Ataques e Magias de Suporte</p>
+                    </div>
+
+                </div>
+
+                <!-- COLUNA 3: Foto do Personagem, Status de Combate, Agradecimentos -->
+                <div class="caixaStatusDeCombateEAparenciaPersonagem">
+
+                    <!-- Foto original preservada conforme pedido -->
+                    <div class="aparenciaPersonagem" id="blocoFotoPersonagem">
+                        <img src="imgs/ImagemPersonagemRanzer_.jpg" alt="Aparência do Personagem (Desenvolvedor)">
+                        <p class="identificadorCaixa">Aparência do Personagem</p>
+                    </div>
+
+                    <div class="caixaStatusDeCombate">
+                        <div class="caixaDefesas">
+                            <div class="caixaArmadura identificadorCaixa">
+                                <div class="pontosArmadura">14</div>
+                                <span class="labelDefesaTitulo">CA</span>
+                                <span class="labelDefesaSub">(Armadura)</span>
+                            </div>
+
+                            <div class="caixaIniciativa identificadorCaixa">
+                                <div class="pontosIniciativa">+2</div>
+                                <span class="labelDefesaTitulo">Iniciativa</span>
+                            </div>
+
+                            <div class="caixaDesloc identificadorCaixa">
+                                <div class="pontosDesloc">9m</div>
+                                <span class="labelDefesaTitulo">Deslocamento</span>
+                            </div>
+                        </div>
+
+                        <div class="caixaSaude">
+                            <div class="caixaPontosDeVidaAtuais">
+                                <div class="pvTopo">
+                                    <span class="pvTotaisLabel">PV Máx: <strong>42</strong></span>
+                                </div>
+                                <div class="pvCentro">
+                                    <input name="pvTotais" id="pvTotais" type="text" value="42" />
+                                </div>
+                                <p class="identificadorCaixa">Pontos de Vida Atuais</p>
+                            </div>
+
+                            <div class="caixaPontosDeVidaTemporarios identificadorCaixa">
+                                <div class="pontosDeVidaTemporarios">+10</div>
+                                <span>PV Temporários (Café)</span>
+                            </div>
+                        </div>
+
+                        <div class="caixaSorte">
+                            <div class="caixaDadosDeVida">
+                                <div class="caixaInput">
+                                    <label for="totalDadosDeVida">Total</label>
+                                    <input name="totalDadosDevida" id="totalDadosDeVida" type="text" value="5d8">
+                                </div>
+                                <p class="identificadorCaixa">Dados de Vida</p>
+                            </div>
+
+                            <div class="caixaTesteContraMorte">
+                                <div class="sucessosContraMorte">
+                                    <label>Sucessos</label>
+                                    <input name="testeContraMorteSucesso1" type="checkbox" checked>
+                                    <input name="testeContraMorteSucesso2" type="checkbox" checked>
+                                    <input name="testeContraMorteSucesso3" type="checkbox" checked>
+                                </div>
+
+                                <div class="fracassosContraMorte">
+                                    <label>Falhas</label>
+                                    <input name="testeContraMorteFracassos1" type="checkbox">
+                                    <input name="testeContraMorteFracassos2" type="checkbox">
+                                    <input name="testeContraMorteFracassos3" type="checkbox">
+                                </div>
+
+                                <p class="identificadorCaixa">Testes Contra a Morte</p>
+                            </div>
+                        </div>
+
+                        <p class="identificadorCaixa">Status de Combate</p>
+                    </div>
+
+                    <div class="caixaAgradecimentos">
+                        <p>Agradeço a Deus pela jornada, à minha mãe e à minha esposa pelo apoio incondicional. Sem eles não teria motivação e inspiração para evoluir a cada nível.<br><br>
+                        Ícones especiais por: <a href="https://icons8.com" target="_blank" rel="noopener">Icons8.com</a></p>
+                        <p class="identificadorCaixa">Agradecimentos e Considerações</p>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- Script de Interatividade e Cálculos D&D -->
+    <script src="js/rpg.js"></script>
+</body>
+
+</html>

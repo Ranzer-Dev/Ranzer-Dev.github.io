@@ -1,0 +1,678 @@
+/* ============================================================
+   PORTFÓLIO DIVERTIDO - FICHA DE PERSONAGEM D&D 5e
+   Visual Autêntico de Ficha Clássica, Alinhamento Perfeito & D20
+   ============================================================ */
+
+/* 1. Barra de Alternância Superior Harmoniosa */
+.switcher-container {
+    background: #1a1614;
+    padding: 0.6rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #3d352e;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-switcher {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.switcher-label {
+    color: #e2d9cc;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'MedievalSharp', cursive;
+    letter-spacing: 0.5px;
+}
+
+.switch-group {
+    display: inline-flex;
+    background: #2b2520;
+    border: 1px solid #5a4d40;
+    border-radius: 30px;
+    padding: 3px;
+}
+
+.switch-btn {
+    padding: 0.45rem 1.2rem;
+    border-radius: 25px;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #b8aba0 !important;
+}
+
+.switch-btn:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.switch-btn.active {
+    background: #e2d9cc;
+    color: #1a1614 !important;
+    font-weight: 700;
+}
+
+/* 2. Fundo e Contêiner da Ficha D&D (Sem bolinhas conflitantes) */
+body.modo-rpg {
+    background-color: #ede7de;
+    background-image: linear-gradient(#e5ded3 1px, transparent 1px), linear-gradient(90deg, #e5ded3 1px, transparent 1px);
+    background-size: 24px 24px;
+    margin: 0;
+    padding-bottom: 3rem;
+    color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.rpg-sheet-wrapper {
+    max-width: 1160px;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border: 4px double #111111;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Título da Ficha */
+.identificadorVisual {
+    font-size: 28px;
+    font-family: 'MedievalSharp', cursive;
+    margin: 0 0 1.2rem 0;
+    color: #111111;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 3. Rolador de Dados D20 Interativo (Somente o Dado Gira) */
+.d20-card-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border: 3px double #111111;
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    margin: 0 auto 1.5rem auto;
+    background: #faf8f5;
+    max-width: 600px;
+}
+
+.d20-dice-wrapper {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.d20-dice {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.d20-dice:hover {
+    transform: scale(1.08);
+}
+
+.d20-svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.d20-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff;
+    pointer-events: none;
+    text-shadow: 0 1px 2px #000;
+}
+
+/* Animação exclusiva no dado D20 */
+.d20-dice.girando-dado {
+    animation: rolarDadoD20 0.5s cubic-bezier(0.2, 0.8, 0.4, 1);
+}
+
+@keyframes rolarDadoD20 {
+    0% { transform: rotate(0deg) scale(1); }
+    30% { transform: rotate(-120deg) scale(1.2); }
+    70% { transform: rotate(240deg) scale(0.85); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+.d20-info-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+.btn-d20-roll {
+    background: #111111;
+    color: #ffffff;
+    border: 2px solid #111111;
+    border-radius: 6px;
+    padding: 0.4rem 1.1rem;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-d20-roll:hover {
+    background: #333333;
+}
+
+.btn-d20-roll:active {
+    transform: scale(0.97);
+}
+
+.d20-result-label {
+    font-size: 0.9rem;
+    color: #333333;
+    font-weight: bold;
+}
+
+/* 4. Ajustes no Cabeçalho da Ficha (Nome e Especificações Estilo D&D 5E) */
+.informacaoPersonagem {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.caixaNomePersonagem {
+    width: 36%;
+    border: 3px double #111111;
+    border-radius: 8px;
+    padding: 0.8rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.nomePersonagemValor {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #111111;
+    line-height: 1.1;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.35rem;
+}
+
+.labelNomePersonagem {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #333333;
+    border-top: 1px solid #111111;
+    width: 100%;
+    padding-top: 4px;
+}
+
+.especificacoesPersonagem {
+    width: 62%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.6rem 1rem;
+    border: 3px double #111111;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.especificacoesPersonagem div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.especificacoesPersonagem p:first-child {
+    font-size: 0.88rem;
+    margin: 0 0 2px 0;
+    font-weight: 600;
+    color: #111111;
+}
+
+.especificacoesPersonagem .subtituloCampoTexto {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top: 1px solid #111111;
+    padding-top: 2px;
+    margin: 0;
+    color: #333333;
+}
+
+/* 5. Alinhamento de Moedas e Equipamentos Lado a Lado */
+.caixaMoedasEEquipamentos {
+    border: 3px double #111111;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    background: #ffffff;
+}
+
+/* Coluna de Moedas à Esquerda */
+.caixaMoedas {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.moedaCobre, .moedaPrata, .moedaElektro, .moedaOuro, .moedaPlatina {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px double #111111;
+    border-radius: 6px;
+    padding: 0.2rem 0.5rem;
+    width: 100% !important;
+    background: #ffffff;
+}
+
+.moedaCobre label, .moedaPrata label, .moedaElektro label, .moedaOuro label, .moedaPlatina label {
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #111111;
+}
+
+.moedaCobre input, .moedaPrata input, .moedaElektro input, .moedaOuro input, .moedaPlatina input {
+    width: 45px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #111111;
+    font-weight: 600;
+    font-size: 0.85rem;
+    background: transparent;
+}
+
+/* Coluna de Equipamentos à Direita com os Ícones Oficiais */
+.caixaEquipamentos {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    text-align: left;
+}
+
+.caixaEquipamentos .arma,
+.caixaEquipamentos .armadura,
+.caixaEquipamentos .escudo,
+.caixaEquipamentos .colar,
+.caixaEquipamentos .sapatos {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed #777;
+    padding: 2px 0;
+    font-size: 0.85rem;
+}
+
+.caixaEquipamentos .arma::before,
+.caixaEquipamentos .armadura::before,
+.caixaEquipamentos .escudo::before,
+.caixaEquipamentos .colar::before,
+.caixaEquipamentos .sapatos::before {
+    content: "";
+    display: inline-block;
+    min-width: 28px;
+    height: 28px;
+    margin-right: 0.6rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.caixaEquipamentos .arma::before { background-image: url('../imgs/icons8-sword-50.png'); }
+.caixaEquipamentos .armadura::before { background-image: url('../imgs/icons8-armor-64.png'); }
+.caixaEquipamentos .escudo::before { background-image: url('../imgs/icons8-shield-32.png'); }
+.caixaEquipamentos .colar::before { background-image: url('../imgs/icons8-necklace-32.png'); }
+.caixaEquipamentos .sapatos::before { background-image: url('../imgs/icons8-armored-boot-32.png'); }
+
+.caixaEquipamentos p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #111111;
+}
+
+/* Caixa de Itens Lendários / Apps no fundo dos equipamentos */
+.itens-lendarios-rpg {
+    width: 100%;
+    margin-top: 0.6rem;
+    padding: 0.5rem 0.7rem;
+    border: 2px dashed #111111;
+    border-radius: 6px;
+    background: #faf8f5;
+    font-size: 0.825rem;
+    text-align: left;
+}
+
+.itens-lendarios-rpg strong {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.caixaMoedasEEquipamentos .identificadorCaixa {
+    width: 100%;
+    margin: 0.8rem 0 0 0;
+    text-align: center;
+}
+
+/* 6. Soft Skills com Ícones Alinhados */
+.caixaSoftSkill div {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed #777;
+    padding: 4px 0;
+    font-size: 0.85rem;
+    text-align: left;
+}
+
+.caixaSoftSkill div::before {
+    content: "";
+    display: inline-block;
+    min-width: 24px;
+    height: 24px;
+    margin-right: 0.6rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.caixaSoftSkillUm::before { background-image: url('../imgs/book_icon.png'); }
+.caixaSoftSkillDois::before { background-image: url('../imgs/clock_icon.png'); }
+.caixaSoftSkillTres::before { background-image: url('../imgs/diamond.png'); }
+.caixaSoftSkillQuatro::before { background-image: url('../imgs/line.png'); }
+
+/* 7. Magias com Ícones Alinhados */
+.caixaMagias .beberCafe,
+.caixaMagias .darUmaPausa {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-bottom: 1px dashed #ccc;
+    transition: background 0.15s;
+}
+
+.caixaMagias .beberCafe:hover,
+.caixaMagias .darUmaPausa:hover {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.caixaMagias .beberCafe::before,
+.caixaMagias .darUmaPausa::before {
+    content: "";
+    display: inline-block;
+    min-width: 28px;
+    height: 28px;
+    margin-right: 0.6rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.caixaMagias .beberCafe::before { background-image: url('../imgs/icons8-cafe-32.png'); }
+.caixaMagias .darUmaPausa::before { background-image: url('../imgs/icons8-yoga-mat-32.png'); }
+
+
+/* --- Ajustes Visuais de Combate e Aparência (D&D 5E Fiel) --- */
+.aparenciaPersonagem {
+    border: 3px double #111111 !important;
+    border-radius: 10px !important;
+    padding: 0.8rem !important;
+    text-align: center !important;
+    background: #ffffff !important;
+    box-sizing: border-box !important;
+    margin-bottom: 1rem !important;
+}
+
+.aparenciaPersonagem img {
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 6px !important;
+    display: block !important;
+    margin: 0 auto 0.4rem auto !important;
+}
+
+.caixaDefesas {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: stretch !important;
+    gap: 0.5rem !important;
+    margin: 0 0 0.8rem 0 !important;
+}
+
+.caixaArmadura,
+.caixaIniciativa,
+.caixaDesloc {
+    flex: 1 1 0 !important;
+    min-height: 84px !important;
+    height: auto !important;
+    padding: 0.45rem 0.2rem !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+    overflow: hidden !important;
+}
+
+/* Escudo de Armadura com contorno e espaço perfeito para o texto */
+.caixaArmadura {
+    border: 3px double #111111 !important;
+    border-radius: 8px 8px 36px 36px !important;
+}
+
+.caixaIniciativa,
+.caixaDesloc {
+    border: 3px double #111111 !important;
+    border-radius: 8px !important;
+}
+
+.pontosArmadura,
+.pontosIniciativa,
+.pontosDesloc {
+    font-family: 'MedievalSharp', cursive !important;
+    font-size: 1.45rem !important;
+    font-weight: bold !important;
+    line-height: 1 !important;
+    margin-bottom: 2px !important;
+    color: #111111 !important;
+}
+
+.labelDefesaTitulo {
+    font-size: 0.75rem !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1.1 !important;
+    color: #111111 !important;
+}
+
+.labelDefesaSub {
+    font-size: 0.65rem !important;
+    font-weight: 500 !important;
+    color: #444444 !important;
+    line-height: 1 !important;
+    margin-top: 1px !important;
+}
+
+/* Caixa de Pontos de Vida */
+.caixaPontosDeVidaAtuais {
+    border: 3px double #111111 !important;
+    border-radius: 8px !important;
+    padding: 0.6rem !important;
+    background: #ffffff !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-bottom: 0.8rem !important;
+}
+
+.pvTopo {
+    width: 100% !important;
+    text-align: left !important;
+    font-size: 0.75rem !important;
+    color: #444444 !important;
+}
+
+.pvCentro {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0.2rem 0 !important;
+}
+
+#pvTotais {
+    font-family: 'MedievalSharp', cursive !important;
+    font-size: 1.6rem !important;
+    font-weight: bold !important;
+    width: 80px !important;
+    text-align: center !important;
+    border: none !important;
+    border-bottom: 2px solid #111111 !important;
+    background: transparent !important;
+    color: #111111 !important;
+    padding: 0 0.2rem !important;
+}
+
+.caixaPontosDeVidaAtuais .identificadorCaixa {
+    font-size: 0.75rem !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin: 0.3rem 0 0 0 !important;
+    color: #111111 !important;
+}
+
+.caixaPontosDeVidaTemporarios {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 3px double #111111 !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 0.2rem !important;
+    height: auto !important;
+    min-height: 56px !important;
+    background: #ffffff !important;
+    margin-bottom: 0.8rem !important;
+    font-size: 0.75rem !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+}
+
+.pontosDeVidaTemporarios {
+    font-family: 'MedievalSharp', cursive !important;
+    font-size: 1.35rem !important;
+    font-weight: bold !important;
+    line-height: 1 !important;
+    margin-bottom: 2px !important;
+    color: #111111 !important;
+}
+
+/* Responsividade Mobile Especial: Foto logo após o nome do personagem */
+@media (max-width: 900px) {
+    .informacaoPersonagem {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem !important;
+        width: 100% !important;
+    }
+
+    .caixaNomePersonagem {
+        width: 100% !important;
+        max-width: 460px !important;
+    }
+
+    .aparenciaPersonagem {
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 0.5rem auto !important;
+    }
+
+    .especificacoesPersonagem {
+        width: 100% !important;
+        max-width: 460px !important;
+    }
+}
+
+/* 8. Responsividade Sem Quebras */
+@media (max-width: 1024px) {
+    #caixaConteudoGeral {
+        min-width: 100% !important;
+        max-width: 100% !important;
+        padding: 0;
+    }
+
+    .caixaStatusGeralPersonagem {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .caixaAtributos {
+        width: 100% !important;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    .caixaAtributosAdicionais,
+    .caixaCaracteristicasEHabilidadesEEquipamentosEMagias,
+    .caixaStatusDeCombateEAparenciaPersonagem {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 1rem 0;
+    }
+}
