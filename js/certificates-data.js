@@ -338,7 +338,7 @@ window.CERTIFICADOS_DATA = [
     },
     {
         id: 43,
-        title: "Gerenciado Pacotes no Node.js com NPM",
+        title: "Gerenciando Pacotes no Node.js com NPM",
         date: "07/10/2025",
         category: "node",
         tag: "NPM & Packages",
@@ -514,7 +514,7 @@ window.CERTIFICADOS_DATA = [
     },
     {
         id: 65,
-        title: "Introdução as IDEs e Configuração de Ambiente .NET",
+        title: "Introdução às IDEs e Configuração de Ambiente .NET",
         date: "16/09/2025",
         category: "dotnet",
         tag: ".NET Setup",
