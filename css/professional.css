@@ -63,6 +63,27 @@ body {
 }
 
 /* ============================================================
+   JUSTIFICAÇÃO GLOBAL DE TEXTOS & PARÁGRAFOS
+   ============================================================ */
+p,
+.hero-lead,
+.section-desc,
+.project-desc,
+.bento-card p,
+.timeline-content p,
+.timeline-content li,
+.empty-state p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+}
+
+.hero-visual-card p {
+    text-align: center;
+}
+
+/* ============================================================
    NAVBAR MINIMALISTA & PRECISA
    ============================================================ */
 .main-header {

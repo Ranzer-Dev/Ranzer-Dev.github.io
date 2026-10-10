@@ -751,6 +751,10 @@ body.modo-rpg {
     font-size: 0.825rem !important;
     line-height: 1.5 !important;
     box-sizing: border-box !important;
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    hyphens: auto !important;
+    -webkit-hyphens: auto !important;
 }
 
 /* ============================================================
